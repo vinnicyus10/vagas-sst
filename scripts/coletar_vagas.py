@@ -45,17 +45,17 @@ TERMOS_MG = [
 # Fontes de feeds publicos (RSS/Atom). Adicione mais conforme quiser.
 # Cada item: (nome_da_fonte, url_do_feed)
 FONTES_RSS = [
-    # Google News RSS - gratuito e sem bloqueio
-    ("Google News - Técnico Segurança MG",
-     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - Engenheiro Segurança MG",
-     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - Coordenador SST MG",
-     "https://news.google.com/rss/search?q=%22coordenador+de+seguran%C3%A7a%22+%22Minas+Gerais%22+emprego&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - SST SESMT MG",
-     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+vaga+emprego&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - HSE SSMA MG",
-     "https://news.google.com/rss/search?q=HSE+SSMA+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    # Google News RSS - excluindo concursos publicos, focando setor privado
+    ("Google News - Técnico Segurança MG CLT",
+     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22+vaga+-concurso+-edital+-processo+seletivo+CLT&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - Engenheiro Segurança MG empresa",
+     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22+%22vaga%22+-concurso+-edital+empresa&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - Coordenador SST MG empresa",
+     "https://news.google.com/rss/search?q=%22coordenador+de+seguran%C3%A7a%22+%22Minas+Gerais%22+emprego+-concurso+-edital+contrata%C3%A7%C3%A3o&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - SST SESMT MG privado",
+     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+%22vaga%22+-concurso+-edital&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - HSE SSMA MG industria",
+     "https://news.google.com/rss/search?q=HSE+SSMA+%22Minas+Gerais%22+vaga+ind%C3%BAstria+-concurso&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
 ]
 
 # Termos de busca usados para montar URLs de feed quando a fonte aceita query.
@@ -98,8 +98,16 @@ def baixar(url: str, timeout: int = 20) -> str | None:
         return None
 
 
+PALAVRAS_CONCURSO = [
+    "concurso publico", "edital", "inscricoes abertas", "prova objetiva",
+    "gabarito", "processo seletivo publico", "prefeitura abre",
+    "governo abre", "secretaria de estado",
+]
+
 def eh_vaga_sst(titulo: str, descricao: str) -> bool:
     texto = sem_acento(f"{titulo} {descricao}")
+    if any(p in texto for p in PALAVRAS_CONCURSO):
+        return False
     return any(p in texto for p in PALAVRAS_SST)
 
 
