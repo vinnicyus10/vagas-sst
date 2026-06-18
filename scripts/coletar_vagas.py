@@ -45,23 +45,17 @@ TERMOS_MG = [
 # Fontes de feeds publicos (RSS/Atom). Adicione mais conforme quiser.
 # Cada item: (nome_da_fonte, url_do_feed)
 FONTES_RSS = [
-    # Indeed Brasil - vagas SST em Minas Gerais
-    ("Indeed - Engenheiro Segurança MG",
-     "https://br.indeed.com/rss?q=engenheiro+de+seguran%C3%A7a+do+trabalho&l=Minas+Gerais"),
-    ("Indeed - Técnico Segurança MG",
-     "https://br.indeed.com/rss?q=t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho&l=Minas+Gerais"),
-    ("Indeed - Coordenador Segurança MG",
-     "https://br.indeed.com/rss?q=coordenador+de+seguran%C3%A7a+do+trabalho&l=Minas+Gerais"),
-    ("Indeed - SST MG",
-     "https://br.indeed.com/rss?q=SST+SESMT&l=Minas+Gerais"),
-    ("Indeed - HSE MG",
-     "https://br.indeed.com/rss?q=HSE+SSMA+seguran%C3%A7a+ocupacional&l=Minas+Gerais"),
-    # Empregos.net
-    ("Empregos.net - Segurança Trabalho",
-     "https://www.empregos.net/rss/seguranca-do-trabalho/mg"),
-    # EmpregJusto
-    ("EmpregJusto - Segurança",
-     "https://www.empregojusto.com/rss/seguranca-do-trabalho/minas-gerais/"),
+    # Google News RSS - gratuito e sem bloqueio
+    ("Google News - Técnico Segurança MG",
+     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - Engenheiro Segurança MG",
+     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - Coordenador SST MG",
+     "https://news.google.com/rss/search?q=%22coordenador+de+seguran%C3%A7a%22+%22Minas+Gerais%22+emprego&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - SST SESMT MG",
+     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+vaga+emprego&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - HSE SSMA MG",
+     "https://news.google.com/rss/search?q=HSE+SSMA+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
 ]
 
 # Termos de busca usados para montar URLs de feed quando a fonte aceita query.
