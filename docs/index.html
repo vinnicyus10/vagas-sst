@@ -7,526 +7,429 @@
 <meta name="description" content="Vagas de Engenheiro, Coordenador e Técnico de Segurança do Trabalho em Minas Gerais, atualizadas automaticamente todo dia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0a0e1a;
-  --bg2: #0f1422;
-  --surface: #141928;
-  --surface2: #1a2035;
-  --border: rgba(255,255,255,0.07);
+  --bg: #060912;
+  --bg2: #080c18;
+  --surface: rgba(255,255,255,0.03);
+  --surface2: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.06);
   --border2: rgba(255,255,255,0.12);
-  --text: #e8ecf4;
-  --text2: #8892a4;
-  --text3: #5a6475;
+  --text: #dde4f0;
+  --text2: #7a8499;
+  --text3: #3e4557;
   --amber: #f5a623;
-  --amber-dim: rgba(245,166,35,0.12);
-  --amber-glow: rgba(245,166,35,0.25);
+  --amber2: #fbbf24;
   --blue: #3b82f6;
-  --blue-dim: rgba(59,130,246,0.12);
+  --blue2: #60a5fa;
   --green: #22c55e;
-  --green-dim: rgba(34,197,94,0.1);
   --purple: #a78bfa;
-  --purple-dim: rgba(167,139,250,0.12);
-  --red-dim: rgba(239,68,68,0.1);
-  --radius: 14px;
-  --radius-sm: 8px;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04);
-  --shadow-hover: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
+  --cyan: #22d3ee;
+  --sans: 'Inter', system-ui, sans-serif;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: var(--sans);
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-}
-a { color: inherit; text-decoration: none; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
 
-/* ── HEADER ── */
-.hero {
-  position: relative;
-  background: var(--bg2);
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
-  padding: 0 24px;
+/* ── CANVAS BG ── */
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0.5}
+
+/* ── GRID OVERLAY ── */
+.grid-overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(59,130,246,0.03) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 0%,black 40%,transparent 100%);
 }
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -120px; left: 50%;
-  transform: translateX(-50%);
-  width: 900px; height: 400px;
-  background: radial-gradient(ellipse, rgba(59,130,246,0.12) 0%, transparent 70%);
-  pointer-events: none;
+
+/* ── NAV ── */
+.nav{
+  position:relative;z-index:100;
+  max-width:1120px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 28px;
 }
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -60px; right: -80px;
-  width: 400px; height: 400px;
-  background: radial-gradient(ellipse, rgba(245,166,35,0.06) 0%, transparent 70%);
-  pointer-events: none;
+.logo{display:flex;align-items:center;gap:12px;cursor:default;user-select:none}
+.logo-mark{
+  position:relative;width:40px;height:40px;flex-shrink:0;
 }
-.nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
+.logo-mark svg{width:40px;height:40px;filter:drop-shadow(0 0 12px rgba(245,166,35,0.6))}
+.logo-text{
+  display:flex;flex-direction:column;gap:1px;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: -0.01em;
+.logo-text .top{
+  font-size:15px;font-weight:800;letter-spacing:-0.02em;color:#fff;
+  line-height:1;
 }
-.logo-icon {
-  width: 32px; height: 32px;
-  background: linear-gradient(135deg, var(--amber), #e08c0a);
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  box-shadow: 0 0 20px rgba(245,166,35,0.3);
+.logo-text .top span{
+  background:linear-gradient(135deg,var(--amber),var(--amber2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
-.badge-ao-vivo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--green-dim);
-  border: 1px solid rgba(34,197,94,0.2);
-  color: var(--green);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px 11px;
-  border-radius: 99px;
-  letter-spacing: 0.02em;
+.logo-text .bot{font-size:10px;font-weight:500;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase}
+
+.nav-right{display:flex;align-items:center;gap:12px}
+.pill-live{
+  display:flex;align-items:center;gap:7px;
+  background:rgba(34,197,94,0.08);
+  border:1px solid rgba(34,197,94,0.18);
+  color:var(--green);font-size:12px;font-weight:600;
+  padding:6px 13px;border-radius:99px;
+  letter-spacing:0.03em;
 }
-.dot-live {
-  width: 7px; height: 7px;
-  background: var(--green);
-  border-radius: 50%;
-  animation: blink 2s infinite;
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse-green 2s infinite}
+@keyframes pulse-green{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,0.5)}50%{box-shadow:0 0 0 5px rgba(34,197,94,0)}}
+
+/* ── HERO ── */
+.hero{
+  position:relative;z-index:1;
+  max-width:1120px;margin:0 auto;
+  padding:60px 28px 80px;
 }
-@keyframes blink {
-  0%,100% { opacity: 1; }
-  50% { opacity: 0.3; }
+.hero-glow{
+  position:absolute;top:-100px;left:50%;transform:translateX(-50%);
+  width:800px;height:500px;
+  background:radial-gradient(ellipse,rgba(59,130,246,0.1) 0%,rgba(245,166,35,0.04) 40%,transparent 70%);
+  pointer-events:none;z-index:-1;
 }
-.hero-body {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 56px 0 52px;
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(245,166,35,0.22);
+  background:rgba(245,166,35,0.07);
+  color:var(--amber);
+  font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
+  padding:5px 14px;border-radius:99px;margin-bottom:28px;
 }
-.hero-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--amber-dim);
-  border: 1px solid rgba(245,166,35,0.2);
-  color: var(--amber);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 5px 12px;
-  border-radius: 99px;
-  margin-bottom: 22px;
+.eyebrow svg{flex-shrink:0}
+
+.hero h1{
+  font-size:clamp(34px,5vw,62px);
+  font-weight:900;
+  letter-spacing:-0.04em;
+  line-height:1.05;
+  color:#fff;
+  max-width:700px;
+  margin-bottom:22px;
 }
-.hero h1 {
-  font-size: clamp(30px, 4vw, 48px);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  color: #fff;
-  max-width: 640px;
-  margin-bottom: 16px;
+.hero h1 .grad{
+  background:linear-gradient(135deg,var(--amber) 0%,var(--amber2) 40%,var(--cyan) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:hue-shift 8s linear infinite;
 }
-.hero h1 span {
-  background: linear-gradient(135deg, var(--amber), #fbbf24);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+@keyframes hue-shift{
+  0%{filter:hue-rotate(0deg)}
+  50%{filter:hue-rotate(20deg)}
+  100%{filter:hue-rotate(0deg)}
 }
-.hero-sub {
-  font-size: 16px;
-  color: var(--text2);
-  max-width: 540px;
-  line-height: 1.65;
-  margin-bottom: 32px;
+.hero-sub{
+  font-size:17px;color:var(--text2);max-width:520px;line-height:1.7;margin-bottom:36px;
 }
-.hero-meta {
-  font-size: 13px;
-  color: var(--text3);
+.hero-meta{
+  font-size:13px;color:var(--text3);
 }
-.hero-meta strong { color: var(--text2); font-weight: 500; }
+.hero-meta b{color:var(--text2);font-weight:500}
 
 /* ── STATS ── */
-.stats-bar {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  transform: translateY(-50%);
+.stats-wrap{
+  position:relative;z-index:1;
+  max-width:1120px;margin:0 auto;
+  padding:0 28px 48px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
 }
-.stat-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 20px;
-  box-shadow: var(--shadow);
-  transition: border-color 0.2s, box-shadow 0.2s;
+.stat-card{
+  position:relative;overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;padding:22px 24px;
+  backdrop-filter:blur(12px);
+  transition:border-color 0.25s,transform 0.2s;
 }
-.stat-card:hover {
-  border-color: var(--border2);
-  box-shadow: var(--shadow-hover);
+.stat-card::before{
+  content:'';position:absolute;inset:0;border-radius:16px;
+  background:linear-gradient(135deg,rgba(255,255,255,0.03) 0%,transparent 60%);
+  pointer-events:none;
 }
-.stat-num {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: #fff;
-  line-height: 1;
-  margin-bottom: 5px;
+.stat-card:hover{border-color:rgba(255,255,255,0.1);transform:translateY(-2px)}
+.stat-num{
+  font-size:36px;font-weight:900;letter-spacing:-0.04em;
+  color:#fff;line-height:1;margin-bottom:6px;
 }
-.stat-num .accent { color: var(--amber); }
-.stat-lab {
-  font-size: 12px;
-  color: var(--text3);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.stat-num.c-amber{color:var(--amber)}
+.stat-num.c-blue{color:var(--blue2)}
+.stat-num.c-green{color:var(--green)}
+.stat-num.c-purple{color:var(--purple)}
+.stat-lab{font-size:12px;color:var(--text3);font-weight:500;letter-spacing:0.05em;text-transform:uppercase}
+.stat-icon{
+  position:absolute;right:18px;top:18px;
+  width:32px;height:32px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;
 }
+
+/* ── DIVIDER ── */
+.section-divider{
+  position:relative;z-index:1;
+  max-width:1120px;margin:0 auto;padding:0 28px;
+  display:flex;align-items:center;gap:12px;margin-bottom:20px;
+}
+.section-divider .label{font-size:12px;font-weight:700;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap}
+.section-divider .line{flex:1;height:1px;background:var(--border)}
 
 /* ── LAYOUT ── */
-.page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px 80px;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 24px;
-  align-items: start;
+.page{
+  position:relative;z-index:1;
+  max-width:1120px;margin:0 auto;
+  padding:0 28px 100px;
+  display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start;
 }
 
-/* ── SIDEBAR FILTROS ── */
-.sidebar {
-  position: sticky;
-  top: 24px;
+/* ── SIDEBAR ── */
+.sidebar{position:sticky;top:24px}
+.filter-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;overflow:hidden;
+  backdrop-filter:blur(12px);
 }
-.filter-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+.filter-head{
+  padding:14px 18px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
 }
-.filter-header {
-  padding: 16px 18px;
-  border-bottom: 1px solid var(--border);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text3);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.filter-head span{font-size:12px;font-weight:700;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase}
+.btn-clear{
+  font-size:11.5px;color:var(--blue2);font-weight:600;
+  background:none;border:none;font-family:inherit;cursor:pointer;padding:0;
+  opacity:0.8;transition:opacity 0.15s;
 }
-.filter-clear {
-  font-size: 11px;
-  color: var(--blue);
-  cursor: pointer;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-transform: none;
-  background: none;
-  border: none;
-  font-family: inherit;
-  padding: 0;
+.btn-clear:hover{opacity:1}
+.f-section{padding:14px 18px;border-bottom:1px solid var(--border)}
+.f-section:last-child{border-bottom:none}
+.f-label{font-size:10.5px;font-weight:700;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:9px}
+.f-input-wrap{position:relative}
+.f-input-wrap svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text3);pointer-events:none}
+.f-input{
+  width:100%;
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:10px;color:var(--text);
+  font-family:inherit;font-size:14px;
+  padding:10px 12px 10px 34px;
+  outline:none;transition:border-color 0.15s,box-shadow 0.15s;
 }
-.filter-clear:hover { opacity: 0.75; }
-.filter-section {
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
+.f-input::placeholder{color:var(--text3)}
+.f-input:focus{border-color:rgba(59,130,246,0.5);box-shadow:0 0 0 3px rgba(59,130,246,0.08)}
+.f-select{
+  width:100%;background:var(--surface2);
+  border:1px solid var(--border);border-radius:10px;
+  color:var(--text);font-family:inherit;font-size:14px;
+  padding:10px 32px 10px 12px;outline:none;cursor:pointer;
+  -webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%233e4557' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;
+  transition:border-color 0.15s,box-shadow 0.15s;
 }
-.filter-section:last-child { border-bottom: none; }
-.filter-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text3);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.filter-busca {
-  position: relative;
-  margin-bottom: 0;
-}
-.filter-busca svg {
-  position: absolute;
-  left: 11px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text3);
-}
-.filter-busca input {
-  width: 100%;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px 12px 10px 34px;
-  outline: none;
-  transition: border-color 0.15s;
-}
-.filter-busca input::placeholder { color: var(--text3); }
-.filter-busca input:focus { border-color: var(--blue); }
-.filter-select {
-  width: 100%;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px 12px;
-  outline: none;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235a6475' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
-  transition: border-color 0.15s;
-}
-.filter-select:focus { border-color: var(--blue); }
-
-/* ── MAIN CONTENT ── */
-.main-content {}
-.result-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-.result-count {
-  font-size: 14px;
-  color: var(--text2);
-}
-.result-count strong { color: var(--text); font-weight: 600; }
+.f-select:focus{border-color:rgba(59,130,246,0.5);box-shadow:0 0 0 3px rgba(59,130,246,0.08)}
 
 /* ── CARDS ── */
-.lista { display: flex; flex-direction: column; gap: 10px; }
+.result-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.result-count{font-size:13.5px;color:var(--text2)}
+.result-count b{color:#fff;font-weight:700}
 
-.vaga {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 22px 24px;
-  box-shadow: var(--shadow);
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.vaga:hover {
-  border-color: rgba(59,130,246,0.3);
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-1px);
-}
-.vaga-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-}
-.vaga-info {}
-.vaga h3 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.01em;
-  line-height: 1.3;
-  margin-bottom: 4px;
-}
-.vaga .empresa {
-  font-size: 13px;
-  color: var(--text2);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.btn-ver {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--blue);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 9px 16px;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  transition: opacity 0.15s, transform 0.1s;
-  box-shadow: 0 0 0 0 rgba(59,130,246,0.4);
-}
-.btn-ver:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(59,130,246,0.3);
-}
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.tag {
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 99px;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-.tag-cidade { background: var(--blue-dim); color: #60a5fa; border: 1px solid rgba(59,130,246,0.2); }
-.tag-cat { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245,166,35,0.2); }
-.tag-nivel { background: var(--green-dim); color: #4ade80; border: 1px solid rgba(34,197,94,0.2); }
-.tag-fonte { background: var(--purple-dim); color: var(--purple); border: 1px solid rgba(167,139,250,0.2); }
+.lista{display:flex;flex-direction:column;gap:10px}
 
-.resumo {
-  font-size: 13.5px;
-  color: var(--text2);
-  line-height: 1.6;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.vaga{
+  position:relative;overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;padding:22px 24px;
+  backdrop-filter:blur(8px);
+  transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;
+  display:flex;flex-direction:column;gap:13px;
+  animation:slide-in 0.3s ease both;
 }
-.vaga-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 4px;
-  border-top: 1px solid var(--border);
+.vaga::before{
+  content:'';position:absolute;inset:0;border-radius:16px;
+  background:linear-gradient(135deg,rgba(255,255,255,0.025) 0%,transparent 50%);
+  pointer-events:none;
 }
-.data-coleta {
-  font-size: 12px;
-  color: var(--text3);
+.vaga:hover{
+  border-color:rgba(59,130,246,0.25);
+  box-shadow:0 0 0 1px rgba(59,130,246,0.1),0 8px 40px rgba(0,0,0,0.4),0 0 60px rgba(59,130,246,0.04);
+  transform:translateY(-2px);
 }
+@keyframes slide-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.vaga-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.vaga h3{font-size:15.5px;font-weight:700;color:#fff;letter-spacing:-0.01em;line-height:1.3;margin-bottom:5px}
+.vaga .empresa{
+  display:flex;align-items:center;gap:6px;
+  font-size:13px;color:var(--text2);
+}
+.btn-ver{
+  flex-shrink:0;
+  display:inline-flex;align-items:center;gap:6px;
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
+  color:#fff;font-size:13px;font-weight:600;
+  padding:9px 17px;border-radius:10px;
+  white-space:nowrap;
+  transition:transform 0.15s,box-shadow 0.15s,opacity 0.15s;
+  box-shadow:0 2px 12px rgba(59,130,246,0.25);
+}
+.btn-ver:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(59,130,246,0.4);opacity:0.95}
+.btn-ver:active{transform:translateY(0)}
+
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:11px;font-weight:600;padding:3px 9px;
+  border-radius:99px;letter-spacing:0.03em;white-space:nowrap;
+}
+.t-loc{background:rgba(59,130,246,0.1);color:#60a5fa;border:1px solid rgba(59,130,246,0.15)}
+.t-cat{background:rgba(245,166,35,0.1);color:var(--amber);border:1px solid rgba(245,166,35,0.15)}
+.t-niv{background:rgba(34,197,94,0.08);color:#4ade80;border:1px solid rgba(34,197,94,0.12)}
+.t-src{background:rgba(167,139,250,0.1);color:var(--purple);border:1px solid rgba(167,139,250,0.12)}
+
+.resumo{
+  font-size:13.5px;color:var(--text2);line-height:1.65;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.vaga-foot{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:12px;border-top:1px solid var(--border);
+}
+.data-txt{font-size:11.5px;color:var(--text3)}
 
 /* ── EMPTY ── */
-.vazio {
-  text-align: center;
-  padding: 64px 24px;
-  color: var(--text3);
+.vazio{
+  grid-column:1/-1;text-align:center;
+  padding:70px 24px;color:var(--text3);
 }
-.vazio svg { margin-bottom: 16px; opacity: 0.4; }
-.vazio strong { display: block; font-size: 16px; color: var(--text2); margin-bottom: 6px; }
+.vazio strong{display:block;font-size:16px;color:var(--text2);margin-bottom:8px}
 
 /* ── FOOTER ── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 28px 24px;
-  text-align: center;
-  color: var(--text3);
-  font-size: 12.5px;
-  line-height: 1.7;
+footer{
+  position:relative;z-index:1;
+  border-top:1px solid var(--border);
+  padding:30px 24px;text-align:center;
+  color:var(--text3);font-size:12.5px;line-height:1.8;
 }
-footer a { color: var(--text2); font-weight: 500; }
-footer a:hover { color: var(--text); }
+footer a{color:var(--text2);font-weight:500;transition:color 0.15s}
+footer a:hover{color:#fff}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 860px) {
-  .stats-bar { grid-template-columns: repeat(2,1fr); }
-  .page { grid-template-columns: 1fr; }
-  .sidebar { position: static; }
+@media(max-width:900px){
+  .stats-wrap{grid-template-columns:repeat(2,1fr)}
+  .page{grid-template-columns:1fr}
+  .sidebar{position:static}
 }
-@media (max-width: 560px) {
-  .hero h1 { font-size: 26px; }
-  .stats-bar { grid-template-columns: repeat(2,1fr); }
-  .vaga-head { flex-direction: column; }
-  .btn-ver { width: 100%; justify-content: center; }
+@media(max-width:560px){
+  .hero h1{font-size:30px}
+  .vaga-head{flex-direction:column}
+  .btn-ver{width:100%;justify-content:center}
+  .stats-wrap{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <nav class="nav">
-    <div class="logo">
-      <div class="logo-icon">⛑</div>
-      <span>Vagas SST · MG</span>
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="shield-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f5a623"/>
+            <stop offset="100%" stop-color="#fbbf24"/>
+          </linearGradient>
+          <linearGradient id="inner-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#1e3a5f"/>
+            <stop offset="100%" stop-color="#0f2040"/>
+          </linearGradient>
+        </defs>
+        <!-- Shield body -->
+        <path d="M20 3 L34 9 L34 20 C34 28 27 34.5 20 37 C13 34.5 6 28 6 20 L6 9 Z" fill="url(#shield-grad)"/>
+        <path d="M20 6 L31 11 L31 20 C31 26.5 25.5 32 20 34 C14.5 32 9 26.5 9 20 L9 11 Z" fill="url(#inner-grad)"/>
+        <!-- Hardhat icon -->
+        <path d="M14 22 Q14 17 20 17 Q26 17 26 22" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <rect x="13" y="22" width="14" height="2.5" rx="1.25" fill="#f5a623"/>
+        <line x1="20" y1="17" x2="20" y2="14" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Shine -->
+        <path d="M11 10 Q14 8 17 9" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      </svg>
     </div>
-    <div class="badge-ao-vivo">
+    <div class="logo-text">
+      <div class="top">Vagas <span>SST</span></div>
+      <div class="bot">Minas Gerais</div>
+    </div>
+  </div>
+  <div class="nav-right">
+    <div class="pill-live">
       <span class="dot-live"></span>
       Atualizado diariamente
     </div>
-  </nav>
-  <div class="hero-body">
-    <div class="hero-label">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      Segurança do Trabalho · Minas Gerais
-    </div>
-    <h1>As melhores vagas de <span>SST em MG</span>, num só lugar</h1>
-    <p class="hero-sub">Engenheiros, coordenadores e técnicos de Segurança do Trabalho. Coletadas automaticamente de múltiplos portais e organizadas para facilitar sua busca.</p>
-    <p class="hero-meta" id="atualizado">Carregando…</p>
   </div>
-</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="eyebrow">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Segurança do Trabalho · Minas Gerais
+  </div>
+  <h1>Encontre sua vaga de <span class="grad">SST em MG</span> hoje mesmo</h1>
+  <p class="hero-sub">Engenheiros, coordenadores e técnicos de Segurança do Trabalho. Coletadas automaticamente de múltiplos portais, filtradas e organizadas em um só lugar.</p>
+  <p class="hero-meta" id="atualizado">Carregando…</p>
+</section>
 
 <!-- STATS -->
-<div class="stats-bar" id="stats"></div>
+<div class="stats-wrap" id="stats"></div>
 
-<!-- MAIN -->
-<div class="page" style="margin-top: calc(50px)">
-  <!-- SIDEBAR -->
+<!-- DIVIDER -->
+<div class="section-divider">
+  <div class="line"></div>
+  <div class="label">Vagas disponíveis</div>
+  <div class="line"></div>
+</div>
+
+<!-- PAGE -->
+<div class="page">
   <aside class="sidebar">
     <div class="filter-box">
-      <div class="filter-header">
-        Filtros
-        <button class="filter-clear" onclick="limparFiltros()">Limpar tudo</button>
+      <div class="filter-head">
+        <span>Filtros</span>
+        <button class="btn-clear" onclick="limparFiltros()">Limpar</button>
       </div>
-      <div class="filter-section">
-        <div class="filter-label">Buscar</div>
-        <div class="filter-busca">
+      <div class="f-section">
+        <div class="f-label">Buscar</div>
+        <div class="f-input-wrap">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="text" id="busca" placeholder="Cargo, empresa, cidade…">
+          <input type="text" id="busca" class="f-input" placeholder="Cargo, empresa, cidade…">
         </div>
       </div>
-      <div class="filter-section">
-        <div class="filter-label">Área</div>
-        <select class="filter-select" id="f-categoria"><option value="">Todas as áreas</option></select>
+      <div class="f-section">
+        <div class="f-label">Área</div>
+        <select id="f-categoria" class="f-select"><option value="">Todas as áreas</option></select>
       </div>
-      <div class="filter-section">
-        <div class="filter-label">Cidade</div>
-        <select class="filter-select" id="f-cidade"><option value="">Todas as cidades</option></select>
+      <div class="f-section">
+        <div class="f-label">Cidade</div>
+        <select id="f-cidade" class="f-select"><option value="">Todas as cidades</option></select>
       </div>
-      <div class="filter-section">
-        <div class="filter-label">Nível</div>
-        <select class="filter-select" id="f-nivel"><option value="">Todos os níveis</option></select>
+      <div class="f-section">
+        <div class="f-label">Nível</div>
+        <select id="f-nivel" class="f-select"><option value="">Todos os níveis</option></select>
       </div>
     </div>
   </aside>
 
-  <!-- LISTA -->
-  <div class="main-content">
-    <div class="result-header">
+  <div>
+    <div class="result-bar">
       <div class="result-count" id="resultado-info"></div>
     </div>
     <main class="lista" id="lista"></main>
@@ -535,101 +438,118 @@ footer a:hover { color: var(--text); }
 
 <footer>
   Vagas coletadas automaticamente de portais públicos — EmpregJusto, Google News, Agrobase e outros.<br>
-  Sempre confirme detalhes e salário no link original. ·
-  <a href="https://github.com/vinnicyus10/vagas-sst" target="_blank" rel="noopener">Ver código no GitHub</a>
+  Confirme sempre os detalhes no link original. ·
+  <a href="https://github.com/vinnicyus10/vagas-sst" target="_blank" rel="noopener">Código no GitHub</a>
 </footer>
 
 <script>
+/* ── CANVAS PARTICLES ── */
+(function(){
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+  function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  window.addEventListener('resize', resize); resize();
+  class P {
+    constructor(){this.reset()}
+    reset(){
+      this.x = Math.random()*W; this.y = Math.random()*H;
+      this.r = Math.random()*1.5+0.3;
+      this.vx = (Math.random()-.5)*0.15; this.vy = (Math.random()-.5)*0.15;
+      this.a = Math.random()*0.4+0.1;
+      this.c = Math.random() < 0.5 ? [59,130,246] : [245,166,35];
+    }
+    draw(){
+      ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(${this.c[0]},${this.c[1]},${this.c[2]},${this.a})`;
+      ctx.fill();
+    }
+    update(){ this.x+=this.vx; this.y+=this.vy; if(this.x<0||this.x>W||this.y<0||this.y>H) this.reset(); }
+  }
+  for(let i=0;i<80;i++) particles.push(new P());
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p=>{p.update();p.draw()});
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── DATA ── */
 let TODAS = [];
 
-async function carregar() {
-  try {
-    const r = await fetch('data/vagas.json?t=' + Date.now());
+async function carregar(){
+  try{
+    const r = await fetch('data/vagas.json?t='+Date.now());
     const d = await r.json();
-    TODAS = d.vagas || [];
+    TODAS = d.vagas||[];
     const el = document.getElementById('atualizado');
-    el.innerHTML = `<strong>Última atualização:</strong> ${d.atualizado_em || '—'}`;
+    el.innerHTML = `<b>Última atualização:</b> ${d.atualizado_em||'—'}`;
     montarStats(d);
     montarFiltros();
     render();
-  } catch(e) {
-    document.getElementById('lista').innerHTML = `
-      <div class="vazio">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-        <strong>Não foi possível carregar as vagas</strong>
-        Tente recarregar a página em alguns instantes.
-      </div>`;
-    document.getElementById('atualizado').textContent = 'Erro ao carregar';
+  }catch(e){
+    document.getElementById('lista').innerHTML=`<div class="vazio"><strong>Erro ao carregar as vagas</strong>Tente recarregar a página.</div>`;
+    document.getElementById('atualizado').textContent='Erro ao carregar';
   }
 }
 
-function montarStats(d) {
-  const total = d.total ?? TODAS.length;
-  const eng = TODAS.filter(v => v.categoria === 'Engenharia').length;
-  const tec = TODAS.filter(v => v.categoria === 'Tecnico').length;
-  const cidades = new Set(TODAS.map(v => v.cidade)).size;
-  document.getElementById('stats').innerHTML = [
-    [total, 'Vagas ativas'],
-    [eng, 'Engenharia'],
-    [tec, 'Técnico'],
-    [cidades, 'Cidades'],
-  ].map(([n,l]) => `
+const CORES = ['c-amber','c-blue','c-green','c-purple'];
+const ICONS = ['🛡️','⚙️','🏙️','📍'];
+
+function animCount(el,target){
+  let n=0,step=Math.ceil(target/30);
+  const t=setInterval(()=>{n=Math.min(n+step,target);el.textContent=n;if(n>=target)clearInterval(t)},30);
+}
+
+function montarStats(d){
+  const total=d.total??TODAS.length;
+  const eng=TODAS.filter(v=>v.categoria==='Engenharia').length;
+  const tec=TODAS.filter(v=>v.categoria==='Tecnico').length;
+  const cidades=new Set(TODAS.map(v=>v.cidade)).size;
+  const items=[[total,'Vagas ativas'],[eng,'Engenharia'],[tec,'Técnico'],[cidades,'Cidades']];
+  document.getElementById('stats').innerHTML=items.map(([n,l],i)=>`
     <div class="stat-card">
-      <div class="stat-num"><span class="accent">${n}</span></div>
+      <div class="stat-icon" style="background:rgba(${['245,166,35','59,130,246','34,197,94','167,139,250'][i]},0.1)">${ICONS[i]}</div>
+      <div class="stat-num ${CORES[i]}" data-target="${n}">0</div>
       <div class="stat-lab">${l}</div>
     </div>`).join('');
-}
-
-function unicos(campo) {
-  return [...new Set(TODAS.map(v => v[campo]).filter(Boolean))].sort();
-}
-
-function montarFiltros() {
-  [['f-categoria','categoria'],['f-cidade','cidade'],['f-nivel','nivel']].forEach(([id,campo]) => {
-    const sel = document.getElementById(id);
-    unicos(campo).forEach(val => {
-      const o = document.createElement('option');
-      o.value = val; o.textContent = val;
-      sel.appendChild(o);
-    });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el=>{
+    const target=parseInt(el.dataset.target);
+    setTimeout(()=>animCount(el,target),200);
   });
 }
 
-function render() {
-  const q = document.getElementById('busca').value.toLowerCase().trim();
-  const fc = document.getElementById('f-categoria').value;
-  const fci = document.getElementById('f-cidade').value;
-  const fn = document.getElementById('f-nivel').value;
+function unicos(campo){return[...new Set(TODAS.map(v=>v[campo]).filter(Boolean))].sort()}
+function montarFiltros(){
+  [['f-categoria','categoria'],['f-cidade','cidade'],['f-nivel','nivel']].forEach(([id,campo])=>{
+    const sel=document.getElementById(id);
+    unicos(campo).forEach(val=>{const o=document.createElement('option');o.value=val;o.textContent=val;sel.appendChild(o)});
+  });
+}
 
-  const lista = TODAS.filter(v => {
-    if (fc && v.categoria !== fc) return false;
-    if (fci && v.cidade !== fci) return false;
-    if (fn && v.nivel !== fn) return false;
-    if (q) {
-      const alvo = [v.titulo, v.empresa, v.cidade, v.resumo].join(' ').toLowerCase();
-      if (!alvo.includes(q)) return false;
-    }
+function render(){
+  const q=document.getElementById('busca').value.toLowerCase().trim();
+  const fc=document.getElementById('f-categoria').value;
+  const fci=document.getElementById('f-cidade').value;
+  const fn=document.getElementById('f-nivel').value;
+  const lista=TODAS.filter(v=>{
+    if(fc&&v.categoria!==fc)return false;
+    if(fci&&v.cidade!==fci)return false;
+    if(fn&&v.nivel!==fn)return false;
+    if(q){const alvo=[v.titulo,v.empresa,v.cidade,v.resumo].join(' ').toLowerCase();if(!alvo.includes(q))return false}
     return true;
   });
-
-  document.getElementById('resultado-info').innerHTML =
-    `<strong>${lista.length}</strong> vaga${lista.length !== 1 ? 's' : ''} encontrada${lista.length !== 1 ? 's' : ''}`;
-
-  const cont = document.getElementById('lista');
-  if (!lista.length) {
-    cont.innerHTML = `
-      <div class="vazio">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        <strong>Nenhuma vaga com esses filtros</strong>
-        Tente limpar os filtros ou usar outros termos.
-      </div>`;
+  document.getElementById('resultado-info').innerHTML=`<b>${lista.length}</b> vaga${lista.length!==1?'s':''} encontrada${lista.length!==1?'s':''}`;
+  const cont=document.getElementById('lista');
+  if(!lista.length){
+    cont.innerHTML=`<div class="vazio"><strong>Nenhuma vaga com esses filtros</strong>Tente ajustar os filtros ou limpar a busca.</div>`;
     return;
   }
-
-  cont.innerHTML = lista.map(v => `
-    <article class="vaga">
+  cont.innerHTML=lista.map((v,i)=>`
+    <article class="vaga" style="animation-delay:${Math.min(i*30,300)}ms">
       <div class="vaga-head">
-        <div class="vaga-info">
+        <div>
           <h3>${esc(v.titulo)}</h3>
           <div class="empresa">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
@@ -642,34 +562,31 @@ function render() {
         </a>
       </div>
       <div class="tags">
-        <span class="tag tag-cidade">📍 ${esc(v.cidade)}</span>
-        <span class="tag tag-cat">${esc(v.categoria)}</span>
-        ${v.nivel && v.nivel !== 'Nao informado' ? `<span class="tag tag-nivel">${esc(v.nivel)}</span>` : ''}
-        <span class="tag tag-fonte">${esc(v.fonte)}</span>
+        <span class="tag t-loc">📍 ${esc(v.cidade)}</span>
+        <span class="tag t-cat">${esc(v.categoria)}</span>
+        ${v.nivel&&v.nivel!=='Nao informado'?`<span class="tag t-niv">${esc(v.nivel)}</span>`:''}
+        <span class="tag t-src">${esc(v.fonte)}</span>
       </div>
-      ${v.resumo ? `<div class="resumo">${esc(v.resumo)}</div>` : ''}
+      ${v.resumo?`<div class="resumo">${esc(v.resumo)}</div>`:''}
       <div class="vaga-foot">
-        <span class="data-coleta">Coletada em ${esc(v.data_coleta || '—')}</span>
+        <span class="data-txt">Coletada em ${esc(v.data_coleta||'—')}</span>
       </div>
     </article>`).join('');
 }
 
-function limparFiltros() {
-  document.getElementById('busca').value = '';
-  document.getElementById('f-categoria').value = '';
-  document.getElementById('f-cidade').value = '';
-  document.getElementById('f-nivel').value = '';
+function limparFiltros(){
+  ['busca','f-categoria','f-cidade','f-nivel'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el.tagName==='INPUT')el.value='';else el.value='';
+  });
   render();
 }
 
-function esc(s) {
-  return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-}
+function esc(s){return(s??'').toString().replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 
-['busca','f-categoria','f-cidade','f-nivel'].forEach(id => {
-  document.getElementById(id).addEventListener('input', render);
+['busca','f-categoria','f-cidade','f-nivel'].forEach(id=>{
+  document.getElementById(id).addEventListener('input',render);
 });
-
 carregar();
 </script>
 </body>
