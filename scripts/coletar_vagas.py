@@ -45,17 +45,21 @@ TERMOS_MG = [
 # Fontes de feeds publicos (RSS/Atom). Adicione mais conforme quiser.
 # Cada item: (nome_da_fonte, url_do_feed)
 FONTES_RSS = [
-    # Google News RSS - excluindo concursos publicos, focando setor privado
-    ("Google News - Técnico Segurança MG CLT",
-     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22+vaga+-concurso+-edital+-processo+seletivo+CLT&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - Engenheiro Segurança MG empresa",
-     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22+%22vaga%22+-concurso+-edital+empresa&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - Coordenador SST MG empresa",
-     "https://news.google.com/rss/search?q=%22coordenador+de+seguran%C3%A7a%22+%22Minas+Gerais%22+emprego+-concurso+-edital+contrata%C3%A7%C3%A3o&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - SST SESMT MG privado",
-     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+%22vaga%22+-concurso+-edital&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - HSE SSMA MG industria",
-     "https://news.google.com/rss/search?q=HSE+SSMA+%22Minas+Gerais%22+vaga+ind%C3%BAstria+-concurso&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    # EmpregJusto - vagas setor privado (filtradas por palavras SST no script)
+    ("EmpregJusto - Engenharia",
+     "https://www.empregojusto.com/rss/engenharia/"),
+    ("EmpregJusto - Todas as categorias",
+     "https://www.empregojusto.com/rss/all/"),
+    # Huork - vagas Brasil (filtradas por palavras SST + MG no script)
+    ("Huork - Todas as vagas",
+     "https://www.huork.com/br/rss/all/"),
+    # Google News - busca ampla sem filtro de concurso (o script ja filtra)
+    ("Google News - Técnico Segurança MG",
+     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - Engenheiro Segurança MG",
+     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    ("Google News - SST SESMT MG",
+     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
 ]
 
 # Termos de busca usados para montar URLs de feed quando a fonte aceita query.
