@@ -27,14 +27,14 @@ jobs:
 
       - name: Copiar dados para a pasta do site
         run: |
-          mkdir -p site/data
-          cp data/vagas.json site/data/vagas.json
+          mkdir -p docs/data
+          cp data/vagas.json docs/data/vagas.json
 
       - name: Publicar alteracoes (se houver)
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/vagas.json site/data/vagas.json
+          git add data/vagas.json docs/data/vagas.json
           if git diff --staged --quiet; then
             echo "Nenhuma vaga nova hoje."
           else
