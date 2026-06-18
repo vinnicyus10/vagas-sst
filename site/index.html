@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagas SST · Segurança do Trabalho em Minas Gerais</title>
+<meta name="description" content="Vagas de Engenheiro, Coordenador e Técnico de Segurança do Trabalho em Minas Gerais, atualizadas automaticamente.">
+<style>
+  :root{
+    --tinta:#16181d;        /* texto principal */
+    --tinta2:#4a4e57;       /* texto secundario */
+    --papel:#f5f4ef;        /* fundo */
+    --cartao:#ffffff;
+    --linha:#e2e0d8;
+    --faixa:#1b365d;        /* azul seguranca */
+    --faixa-2:#264b80;
+    --sinal:#e8a51c;        /* amarelo advertencia */
+    --sinal-fundo:#fbf1d8;
+    --verde:#2f7d52;
+    --verde-fundo:#e4f1e9;
+    --radius:12px;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:var(--papel);color:var(--tinta);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+
+  /* faixa de seguranca decorativa */
+  .hazard{height:8px;background:repeating-linear-gradient(45deg,var(--sinal) 0 18px,#1b1b1b 18px 36px)}
+
+  header{background:var(--faixa);color:#fff;padding:34px 20px 30px}
+  .wrap{max-width:1080px;margin:0 auto}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#bcd0ec;font-weight:600;margin-bottom:10px}
+  header h1{font-size:30px;font-weight:700;letter-spacing:-.01em;line-height:1.15}
+  header p{color:#cfddf0;margin-top:10px;max-width:620px;font-size:15px}
+  .meta-atual{margin-top:18px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 12px;border-radius:99px;font-size:13px;color:#eaf1fa}
+  .ponto{width:8px;height:8px;border-radius:50%;background:var(--sinal);box-shadow:0 0 0 0 rgba(232,165,28,.6);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(232,165,28,.55)}70%{box-shadow:0 0 0 7px rgba(232,165,28,0)}100%{box-shadow:0 0 0 0 rgba(232,165,28,0)}}
+
+  /* barra de stats */
+  .stats{max-width:1080px;margin:-22px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .stat{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--radius);padding:14px 16px}
+  .stat .num{font-size:24px;font-weight:700;color:var(--faixa)}
+  .stat .lab{font-size:12px;color:var(--tinta2);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+
+  /* controles */
+  .controles{max-width:1080px;margin:26px auto 0;padding:0 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .busca{flex:1;min-width:220px;position:relative}
+  .busca input{width:100%;padding:12px 14px 12px 40px;border:1px solid var(--linha);border-radius:var(--radius);font-size:15px;background:var(--cartao);font-family:inherit}
+  .busca input:focus{outline:2px solid var(--faixa-2);border-color:transparent}
+  .busca svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.5}
+  select{padding:12px 14px;border:1px solid var(--linha);border-radius:var(--radius);font-size:14px;background:var(--cartao);font-family:inherit;cursor:pointer;color:var(--tinta)}
+  select:focus{outline:2px solid var(--faixa-2)}
+
+  .resultado-info{max-width:1080px;margin:18px auto 0;padding:0 20px;font-size:13px;color:var(--tinta2)}
+
+  /* lista de vagas */
+  .lista{max-width:1080px;margin:14px auto 50px;padding:0 20px;display:grid;gap:14px}
+  .vaga{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+  .vaga:hover{border-color:var(--faixa-2);transform:translateY(-1px)}
+  .vaga-topo{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}
+  .vaga h3{font-size:18px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+  .vaga .empresa{color:var(--tinta2);font-size:14px;margin-top:2px}
+  .tags{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+  .tag{font-size:11.5px;font-weight:600;padding:4px 9px;border-radius:99px;letter-spacing:.02em;white-space:nowrap}
+  .tag.cidade{background:#eef2f7;color:var(--faixa)}
+  .tag.cat{background:var(--sinal-fundo);color:#8a6206}
+  .tag.nivel{background:var(--verde-fundo);color:var(--verde)}
+  .tag.fonte{background:#f0eef8;color:#5b4b97}
+  .resumo{font-size:14px;color:var(--tinta2);line-height:1.55}
+  .vaga-rodape{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:4px;flex-wrap:wrap}
+  .data{font-size:12px;color:#8b8f98}
+  .btn{display:inline-flex;align-items:center;gap:6px;background:var(--faixa);color:#fff;padding:9px 16px;border-radius:9px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s}
+  .btn:hover{background:var(--faixa-2)}
+
+  .vazio{text-align:center;padding:50px 20px;color:var(--tinta2)}
+  .vazio strong{display:block;color:var(--tinta);font-size:17px;margin-bottom:6px}
+
+  footer{border-top:1px solid var(--linha);padding:26px 20px;text-align:center;color:var(--tinta2);font-size:13px}
+  footer a{color:var(--faixa);text-decoration:none;font-weight:600}
+
+  @media(max-width:640px){
+    header h1{font-size:24px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .vaga-topo{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+<div class="hazard"></div>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Segurança do Trabalho · Minas Gerais</div>
+    <h1>Vagas de SST atualizadas todo dia</h1>
+    <p>Engenheiros, coordenadores e técnicos de Segurança do Trabalho. Coletadas automaticamente de portais públicos e organizadas em um só lugar.</p>
+    <div class="meta-atual"><span class="ponto"></span><span id="atualizado">Carregando…</span></div>
+  </div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="controles">
+  <div class="busca">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="text" id="busca" placeholder="Buscar por cargo, empresa ou cidade…">
+  </div>
+  <select id="f-categoria"><option value="">Todas as áreas</option></select>
+  <select id="f-cidade"><option value="">Todas as cidades</option></select>
+  <select id="f-nivel"><option value="">Todos os níveis</option></select>
+</div>
+
+<div class="resultado-info" id="resultado-info"></div>
+<main class="lista" id="lista"></main>
+
+<footer>
+  <div class="wrap">
+    Vagas coletadas de portais públicos (Agrobase, Indeed, InfoJobs, Glassdoor, Vagas.com, LinkedIn, BNE).<br>
+    Sempre confirme os detalhes e o salário no link original. Atualização automática diária.
+  </div>
+</footer>
+
+<script>
+let TODAS = [];
+
+async function carregar(){
+  try{
+    const r = await fetch('data/vagas.json?t=' + Date.now());
+    const d = await r.json();
+    TODAS = d.vagas || [];
+    document.getElementById('atualizado').textContent = 'Atualizado em ' + (d.atualizado_em || '—');
+    montarStats(d);
+    montarFiltros();
+    render();
+  }catch(e){
+    document.getElementById('lista').innerHTML =
+      '<div class="vazio"><strong>Não foi possível carregar as vagas</strong>Verifique se o arquivo data/vagas.json existe.</div>';
+    document.getElementById('atualizado').textContent = 'Erro ao carregar';
+  }
+}
+
+function montarStats(d){
+  const coord = TODAS.filter(v=>v.categoria && v.categoria.indexOf('Coordena')===0).length;
+  const eng = TODAS.filter(v=>v.categoria==='Engenharia').length;
+  const cidades = new Set(TODAS.map(v=>v.cidade)).size;
+  const stats = [
+    [d.total ?? TODAS.length,'vagas ativas'],
+    [eng,'engenharia'],
+    [coord,'coordenação'],
+    [cidades,'cidades'],
+  ];
+  document.getElementById('stats').innerHTML = stats.map(s=>
+    `<div class="stat"><div class="num">${s[0]}</div><div class="lab">${s[1]}</div></div>`).join('');
+}
+
+function unicos(campo){
+  return [...new Set(TODAS.map(v=>v[campo]).filter(Boolean))].sort();
+}
+
+function montarFiltros(){
+  const map = {'f-categoria':'categoria','f-cidade':'cidade','f-nivel':'nivel'};
+  for(const [id,campo] of Object.entries(map)){
+    const sel = document.getElementById(id);
+    unicos(campo).forEach(val=>{
+      const o = document.createElement('option');
+      o.value = val; o.textContent = val;
+      sel.appendChild(o);
+    });
+  }
+}
+
+function render(){
+  const q = document.getElementById('busca').value.toLowerCase().trim();
+  const fc = document.getElementById('f-categoria').value;
+  const fci = document.getElementById('f-cidade').value;
+  const fn = document.getElementById('f-nivel').value;
+
+  let lista = TODAS.filter(v=>{
+    if(fc && v.categoria!==fc) return false;
+    if(fci && v.cidade!==fci) return false;
+    if(fn && v.nivel!==fn) return false;
+    if(q){
+      const alvo = (v.titulo+' '+v.empresa+' '+v.cidade+' '+v.resumo).toLowerCase();
+      if(!alvo.includes(q)) return false;
+    }
+    return true;
+  });
+
+  const info = document.getElementById('resultado-info');
+  info.textContent = lista.length + (lista.length===1?' vaga encontrada':' vagas encontradas');
+
+  const cont = document.getElementById('lista');
+  if(!lista.length){
+    cont.innerHTML = '<div class="vazio"><strong>Nenhuma vaga com esses filtros</strong>Tente limpar a busca ou escolher outra cidade.</div>';
+    return;
+  }
+  cont.innerHTML = lista.map(v=>`
+    <article class="vaga">
+      <div class="vaga-topo">
+        <div>
+          <h3>${esc(v.titulo)}</h3>
+          <div class="empresa">${esc(v.empresa)}</div>
+        </div>
+        <div class="tags">
+          <span class="tag cidade">${esc(v.cidade)}</span>
+          <span class="tag cat">${esc(v.categoria)}</span>
+          ${v.nivel && v.nivel!=='Nao informado' ? `<span class="tag nivel">${esc(v.nivel)}</span>`:''}
+        </div>
+      </div>
+      <div class="resumo">${esc(v.resumo)}</div>
+      <div class="vaga-rodape">
+        <span class="tag fonte">${esc(v.fonte)}</span>
+        <a class="btn" href="${esc(v.link)}" target="_blank" rel="noopener">Ver vaga e candidatar
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </article>`).join('');
+}
+
+function esc(s){return (s??'').toString().replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+['busca','f-categoria','f-cidade','f-nivel'].forEach(id=>{
+  document.getElementById(id).addEventListener('input',render);
+});
+
+carregar();
+</script>
+</body>
+</html>

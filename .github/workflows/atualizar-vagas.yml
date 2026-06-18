@@ -1,0 +1,43 @@
+name: Atualizar vagas SST
+
+# Roda automaticamente todo dia as 09:00 (horario de Brasilia = 12:00 UTC)
+# e tambem pode ser disparado manualmente pelo botao "Run workflow".
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rodar o coletor de vagas
+        run: python scripts/coletar_vagas.py
+
+      - name: Copiar dados para a pasta do site
+        run: |
+          mkdir -p site/data
+          cp data/vagas.json site/data/vagas.json
+
+      - name: Publicar alteracoes (se houver)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/vagas.json site/data/vagas.json
+          if git diff --staged --quiet; then
+            echo "Nenhuma vaga nova hoje."
+          else
+            git commit -m "Atualizacao automatica de vagas - $(date +'%d/%m/%Y')"
+            git push
+          fi
