@@ -1,10 +1,14 @@
 name: Atualizar vagas SST
 
-# Roda automaticamente todo dia as 09:00 (horario de Brasilia = 12:00 UTC)
-# e tambem pode ser disparado manualmente pelo botao "Run workflow".
+# Roda automaticamente 4x por dia (06h, 12h, 15h, 18h horario de Brasilia =
+# 09h, 15h, 18h, 21h UTC) e tambem pode ser disparado manualmente pelo botao
+# "Run workflow".
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 9 * * *"
+    - cron: "0 15 * * *"
+    - cron: "0 18 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 permissions:

@@ -102,15 +102,39 @@ def baixar(url: str, timeout: int = 20) -> str | None:
         return None
 
 
+# Termos que indicam orgao publico / concurso (excluem a vaga mesmo se bater
+# com palavra SST, pois o site e so para setor privado).
 PALAVRAS_CONCURSO = [
     "concurso publico", "edital", "inscricoes abertas", "prova objetiva",
     "gabarito", "processo seletivo publico", "prefeitura abre",
-    "governo abre", "secretaria de estado",
+    "governo abre", "secretaria de estado", "prefeitura municipal",
+    "camara municipal", "tribunal de justica", "tribunal regional",
+    "ministerio publico", "defensoria publica", "policia militar",
+    "policia civil", "corpo de bombeiros", "exercito brasileiro",
+    "marinha do brasil", "forca aerea", "autarquia", "fundacao publica",
+    "empresa publica", "sociedade de economia mista", "regime juridico unico",
+    "estatutario", "cargo publico", "nomeacao", "posse do cargo",
+    "diario oficial", "agencia reguladora", "instituto federal",
+    "universidade federal", "universidade estadual", "secretaria municipal",
+    "secretaria de saude", "secretaria de educacao", "vestibular",
+    "selecao publica", "lei organica", "vinculo estatutario",
 ]
 
-def eh_vaga_sst(titulo: str, descricao: str) -> bool:
+# Nomes de empregador que indicam vaga publica (checados no campo empresa).
+EMPRESAS_PUBLICAS = [
+    "prefeitura", "camara municipal", "governo do estado", "governo federal",
+    "secretaria de estado", "secretaria municipal", "tribunal", "ministerio",
+    "defensoria", "policia", "bombeiros", "exercito", "marinha", "forca aerea",
+    "inss", "incra", "ibama", "receita federal", "cras", "creas", "detran",
+    "autarquia", "fundacao publica", "universidade federal", "instituto federal",
+]
+
+def eh_vaga_sst(titulo: str, descricao: str, empresa: str = "") -> bool:
     texto = sem_acento(f"{titulo} {descricao}")
     if any(p in texto for p in PALAVRAS_CONCURSO):
+        return False
+    emp = sem_acento(empresa)
+    if any(p in emp for p in EMPRESAS_PUBLICAS):
         return False
     return any(p in texto for p in PALAVRAS_SST)
 
@@ -237,12 +261,13 @@ def processar(brutas: list[dict]) -> list[dict]:
         local = v.get("local", "")
         if not titulo or not v.get("link"):
             continue
-        if not eh_vaga_sst(titulo, desc):
+        empresa_bruta = v.get("empresa") or ""
+        if not eh_vaga_sst(titulo, desc, empresa_bruta):
             continue
         if not eh_minas_gerais(titulo, desc, local):
             continue
 
-        empresa = v.get("empresa") or "Nao informada"
+        empresa = empresa_bruta or "Nao informada"
         cidade = extrair_cidade(titulo, local, desc)
         vid = id_vaga(titulo, empresa, cidade)
         if vid in vistos:
