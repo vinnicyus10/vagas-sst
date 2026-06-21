@@ -9,11 +9,13 @@ Nao depende de nenhuma API paga. Usa feeds publicos e busca leve.
 
 import json
 import re
+import ssl
 import hashlib
 import datetime
 import unicodedata
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.parse import quote
 from urllib.error import URLError, HTTPError
 import xml.etree.ElementTree as ET
 
@@ -62,12 +64,21 @@ FONTES_RSS = [
      "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
 ]
 
-# Termos de busca usados para montar URLs de feed quando a fonte aceita query.
-TERMOS_BUSCA = [
-    "engenheiro de seguranca do trabalho minas gerais",
-    "coordenador de seguranca do trabalho minas gerais",
-    "tecnico de seguranca do trabalho minas gerais",
+# Termos de busca usados na API publica da Gupy (vagas de empresas privadas).
+TERMOS_GUPY = [
+    "seguranca do trabalho",
+    "tecnico de seguranca do trabalho",
+    "engenheiro de seguranca do trabalho",
+    "coordenador de seguranca do trabalho",
+    "tecnico seguranca",
+    "sesmt",
+    "sso",
+    "hse",
 ]
+
+# Endpoint publico (sem autenticacao) da Gupy. Retorna JSON com vagas de
+# career pages de empresas privadas. Filtramos por estado = Minas Gerais.
+GUPY_API = "https://employability-portal.gupy.io/api/v1/jobs"
 
 ARQUIVO_SAIDA = Path(__file__).resolve().parent.parent / "data" / "vagas.json"
 DIAS_VALIDADE = 30  # vagas com mais de X dias somem da lista
@@ -92,14 +103,64 @@ def sem_acento(texto: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
 
 
-def baixar(url: str, timeout: int = 20) -> str | None:
+def _contexto_ssl() -> ssl.SSLContext:
+    """Contexto SSL tolerante.
+
+    Em alguns ambientes Windows o repositorio de certificados nao esta
+    disponivel para o Python e o handshake falha. Como so lemos dados
+    publicos de vagas (nada sensivel, nenhuma credencial trafega), caimos
+    para um contexto sem verificacao quando o padrao falhar. No GitHub
+    Actions (Linux) a verificacao normal funciona.
+    """
     try:
-        req = Request(url, headers={"User-Agent": "Mozilla/5.0 (vagas-sst-bot)"})
-        with urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode("utf-8", errors="ignore")
-    except (URLError, HTTPError, TimeoutError, Exception) as e:
-        print(f"  [aviso] falha ao baixar {url[:60]}: {e}")
+        return ssl.create_default_context()
+    except Exception:
+        return ssl._create_unverified_context()
+
+
+_SSL_CTX = _contexto_ssl()
+_SSL_CTX_INSEGURO = ssl._create_unverified_context()
+
+
+def baixar(url: str, timeout: int = 20) -> str | None:
+    for ctx in (_SSL_CTX, _SSL_CTX_INSEGURO):
+        try:
+            req = Request(url, headers={"User-Agent": "Mozilla/5.0 (vagas-sst-bot)"})
+            with urlopen(req, timeout=timeout, context=ctx) as resp:
+                return resp.read().decode("utf-8", errors="ignore")
+        except ssl.SSLError:
+            continue  # tenta de novo sem verificacao
+        except (URLError, HTTPError, TimeoutError, Exception) as e:
+            print(f"  [aviso] falha ao baixar {url[:60]}: {e}")
+            return None
+    return None
+
+
+def baixar_json(url: str, timeout: int = 25) -> dict | None:
+    texto = baixar_com_accept(url, "application/json", timeout)
+    if not texto:
         return None
+    try:
+        return json.loads(texto)
+    except json.JSONDecodeError:
+        return None
+
+
+def baixar_com_accept(url: str, accept: str, timeout: int = 25) -> str | None:
+    for ctx in (_SSL_CTX, _SSL_CTX_INSEGURO):
+        try:
+            req = Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (vagas-sst-bot)",
+                "Accept": accept,
+            })
+            with urlopen(req, timeout=timeout, context=ctx) as resp:
+                return resp.read().decode("utf-8", errors="ignore")
+        except ssl.SSLError:
+            continue
+        except (URLError, HTTPError, TimeoutError, Exception) as e:
+            print(f"  [aviso] falha ao baixar {url[:60]}: {e}")
+            return None
+    return None
 
 
 # Termos que indicam orgao publico / concurso (excluem a vaga mesmo se bater
@@ -236,6 +297,56 @@ def parse_rss(xml_texto: str, fonte: str) -> list[dict]:
     return vagas
 
 
+def empresa_de_url_gupy(job_url: str, fallback: str) -> str:
+    """Extrai o nome da empresa do subdominio da career page Gupy.
+
+    Ex.: https://vagas-mrveco.gupy.io/... -> "Mrveco".
+    """
+    m = re.search(r"https?://([^.]+)\.gupy\.io", job_url or "")
+    if not m:
+        return fallback or "Nao informada"
+    slug = m.group(1)
+    slug = re.sub(r"^vagas?-?", "", slug)        # tira prefixo "vagas-"
+    slug = slug.replace("-", " ").strip()
+    return slug.title() if slug else (fallback or "Nao informada")
+
+
+def coletar_gupy() -> list[dict]:
+    """Busca vagas na API publica da Gupy (empresas privadas) e devolve apenas
+    as de Minas Gerais, no mesmo formato dos demais coletores."""
+    vagas = []
+    vistos_links = set()
+    print("Coletando vagas da Gupy (empresas privadas)...")
+    for termo in TERMOS_GUPY:
+        url = f"{GUPY_API}?jobName={quote(termo)}&limit=100"
+        dados = baixar_json(url)
+        if not dados or "data" not in dados:
+            continue
+        achadas_mg = 0
+        for j in dados["data"]:
+            estado = (j.get("state") or "")
+            if "minas" not in sem_acento(estado):
+                continue
+            link = j.get("jobUrl") or j.get("careerPageUrl") or ""
+            if not link or link in vistos_links:
+                continue
+            vistos_links.add(link)
+            empresa = empresa_de_url_gupy(link, j.get("careerPageName", ""))
+            vagas.append({
+                "titulo": (j.get("name") or "").strip(),
+                "link": link,
+                "descricao": j.get("description") or "",
+                "data_origem": j.get("publishedDate") or "",
+                "empresa": empresa,
+                "local": f"{j.get('city','')} {estado}".strip(),
+                "fonte": "Gupy",
+            })
+            achadas_mg += 1
+        print(f"- Gupy '{termo}': {achadas_mg} em MG")
+    print(f"Total Gupy (MG): {len(vagas)}")
+    return vagas
+
+
 # ----------------------------------------------------------------------
 # PIPELINE
 # ----------------------------------------------------------------------
@@ -248,6 +359,7 @@ def coletar() -> list[dict]:
         conteudo = baixar(url)
         if conteudo:
             brutas.extend(parse_rss(conteudo, nome))
+    brutas.extend(coletar_gupy())
     print(f"Total bruto coletado: {len(brutas)}")
     return brutas
 
