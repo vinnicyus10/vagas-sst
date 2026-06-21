@@ -79,6 +79,8 @@ TERMOS_GUPY = [
 # Endpoint publico (sem autenticacao) da Gupy. Retorna JSON com vagas de
 # career pages de empresas privadas. Filtramos por estado = Minas Gerais.
 GUPY_API = "https://employability-portal.gupy.io/api/v1/jobs"
+GUPY_PAGINA = 100         # tamanho de cada pagina da API
+GUPY_MAX_PAGINAS = 6      # ate 600 vagas por termo (cobre paginas com vagas MG)
 
 ARQUIVO_SAIDA = Path(__file__).resolve().parent.parent / "data" / "vagas.json"
 DIAS_VALIDADE = 30  # vagas com mais de X dias somem da lista
@@ -311,37 +313,47 @@ def empresa_de_url_gupy(job_url: str, fallback: str) -> str:
     return slug.title() if slug else (fallback or "Nao informada")
 
 
+def _gupy_vaga_mg(j: dict, vistos_links: set) -> dict | None:
+    """Converte um job da Gupy em vaga MG no formato padrao, ou None."""
+    estado = j.get("state") or ""
+    if "minas" not in sem_acento(estado):
+        return None
+    link = j.get("jobUrl") or j.get("careerPageUrl") or ""
+    if not link or link in vistos_links:
+        return None
+    vistos_links.add(link)
+    empresa = empresa_de_url_gupy(link, j.get("careerPageName", ""))
+    return {
+        "titulo": (j.get("name") or "").strip(),
+        "link": link,
+        "descricao": j.get("description") or "",
+        "data_origem": j.get("publishedDate") or "",
+        "empresa": empresa,
+        "local": f"{j.get('city','')} {estado}".strip(),
+        "fonte": "Gupy",
+    }
+
+
 def coletar_gupy() -> list[dict]:
-    """Busca vagas na API publica da Gupy (empresas privadas) e devolve apenas
-    as de Minas Gerais, no mesmo formato dos demais coletores."""
+    """Busca vagas na API publica da Gupy (empresas privadas), paginando cada
+    termo, e devolve apenas as de Minas Gerais no formato padrao."""
     vagas = []
     vistos_links = set()
     print("Coletando vagas da Gupy (empresas privadas)...")
     for termo in TERMOS_GUPY:
-        url = f"{GUPY_API}?jobName={quote(termo)}&limit=100"
-        dados = baixar_json(url)
-        if not dados or "data" not in dados:
-            continue
         achadas_mg = 0
-        for j in dados["data"]:
-            estado = (j.get("state") or "")
-            if "minas" not in sem_acento(estado):
-                continue
-            link = j.get("jobUrl") or j.get("careerPageUrl") or ""
-            if not link or link in vistos_links:
-                continue
-            vistos_links.add(link)
-            empresa = empresa_de_url_gupy(link, j.get("careerPageName", ""))
-            vagas.append({
-                "titulo": (j.get("name") or "").strip(),
-                "link": link,
-                "descricao": j.get("description") or "",
-                "data_origem": j.get("publishedDate") or "",
-                "empresa": empresa,
-                "local": f"{j.get('city','')} {estado}".strip(),
-                "fonte": "Gupy",
-            })
-            achadas_mg += 1
+        for pagina in range(GUPY_MAX_PAGINAS):
+            offset = pagina * GUPY_PAGINA
+            url = (f"{GUPY_API}?jobName={quote(termo)}"
+                   f"&limit={GUPY_PAGINA}&offset={offset}")
+            dados = baixar_json(url)
+            if not dados or not dados.get("data"):
+                break  # acabaram as paginas para esse termo
+            for j in dados["data"]:
+                vaga = _gupy_vaga_mg(j, vistos_links)
+                if vaga:
+                    vagas.append(vaga)
+                    achadas_mg += 1
         print(f"- Gupy '{termo}': {achadas_mg} em MG")
     print(f"Total Gupy (MG): {len(vagas)}")
     return vagas
