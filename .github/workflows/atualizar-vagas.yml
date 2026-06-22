@@ -26,6 +26,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalar dependencias de teste
+        run: pip install pytest
+
+      - name: Rodar testes (nao publica se quebrar)
+        run: python -m pytest -q
+
       - name: Rodar o coletor de vagas
         run: python scripts/coletar_vagas.py
 

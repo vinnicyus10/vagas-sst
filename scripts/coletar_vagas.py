@@ -10,6 +10,7 @@ Nao depende de nenhuma API paga. Usa feeds publicos e busca leve.
 import json
 import re
 import ssl
+import html
 import hashlib
 import datetime
 import unicodedata
@@ -46,22 +47,18 @@ TERMOS_MG = [
 
 # Fontes de feeds publicos (RSS/Atom). Adicione mais conforme quiser.
 # Cada item: (nome_da_fonte, url_do_feed)
+#
+# Google News foi REMOVIDO de proposito: retornava quase so concursos publicos
+# e processos seletivos de prefeituras (lixo para um site de setor privado).
+# A coleta real de vagas privadas vem da API da Gupy (ver coletar_gupy).
 FONTES_RSS = [
-    # EmpregJusto - vagas setor privado (filtradas por palavras SST no script)
+    # EmpregJusto - vagas setor privado (filtradas por palavras SST no script).
+    # So a categoria engenharia: o feed /all/ vive dando timeout.
     ("EmpregJusto - Engenharia",
      "https://www.empregojusto.com/rss/engenharia/"),
-    ("EmpregJusto - Todas as categorias",
-     "https://www.empregojusto.com/rss/all/"),
     # Huork - vagas Brasil (filtradas por palavras SST + MG no script)
     ("Huork - Todas as vagas",
      "https://www.huork.com/br/rss/all/"),
-    # Google News - busca ampla sem filtro de concurso (o script ja filtra)
-    ("Google News - Técnico Segurança MG",
-     "https://news.google.com/rss/search?q=%22t%C3%A9cnico+de+seguran%C3%A7a+do+trabalho%22+%22Minas+Gerais%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - Engenheiro Segurança MG",
-     "https://news.google.com/rss/search?q=%22engenheiro+de+seguran%C3%A7a%22+%22Minas+Gerais%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
-    ("Google News - SST SESMT MG",
-     "https://news.google.com/rss/search?q=SESMT+SST+%22Minas+Gerais%22+vaga&hl=pt-BR&gl=BR&ceid=BR:pt-419"),
 ]
 
 # Termos de busca usados na API publica da Gupy (vagas de empresas privadas).
@@ -103,6 +100,16 @@ def sem_acento(texto: str) -> str:
         return ""
     nfkd = unicodedata.normalize("NFKD", texto)
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
+
+
+def limpar_texto(texto: str) -> str:
+    """Decodifica entidades HTML (&amp;, &ccedil;, &nbsp;...) e normaliza
+    espacos. Usado em titulos, resumos e nomes de empresa."""
+    if not texto:
+        return ""
+    texto = html.unescape(texto)
+    texto = texto.replace("\xa0", " ")            # nbsp residual
+    return re.sub(r"\s+", " ", texto).strip()
 
 
 def _contexto_ssl() -> ssl.SSLContext:
@@ -168,19 +175,23 @@ def baixar_com_accept(url: str, accept: str, timeout: int = 25) -> str | None:
 # Termos que indicam orgao publico / concurso (excluem a vaga mesmo se bater
 # com palavra SST, pois o site e so para setor privado).
 PALAVRAS_CONCURSO = [
-    "concurso publico", "edital", "inscricoes abertas", "prova objetiva",
-    "gabarito", "processo seletivo publico", "prefeitura abre",
-    "governo abre", "secretaria de estado", "prefeitura municipal",
-    "camara municipal", "tribunal de justica", "tribunal regional",
-    "ministerio publico", "defensoria publica", "policia militar",
-    "policia civil", "corpo de bombeiros", "exercito brasileiro",
-    "marinha do brasil", "forca aerea", "autarquia", "fundacao publica",
-    "empresa publica", "sociedade de economia mista", "regime juridico unico",
-    "estatutario", "cargo publico", "nomeacao", "posse do cargo",
-    "diario oficial", "agencia reguladora", "instituto federal",
-    "universidade federal", "universidade estadual", "secretaria municipal",
-    "secretaria de saude", "secretaria de educacao", "vestibular",
-    "selecao publica", "lei organica", "vinculo estatutario",
+    "concurso publico", "concurso ", "concursos abertos", "edital",
+    "inscricoes abertas", "prova objetiva", "gabarito",
+    "processo seletivo publico", "processo seletivo simplificado",
+    "prefeitura abre", "prefeitura de", "prefeitura municipal",
+    "governo abre", "secretaria de estado", "camara municipal",
+    "tribunal de justica", "tribunal regional", "ministerio publico",
+    "defensoria publica", "policia militar", "policia civil",
+    "corpo de bombeiros", "exercito brasileiro", "marinha do brasil",
+    "forca aerea", "autarquia", "fundacao publica", "empresa publica",
+    "sociedade de economia mista", "regime juridico unico", "estatutario",
+    "cargo publico", "nomeacao", "posse do cargo", "diario oficial",
+    "agencia reguladora", "instituto federal", "universidade federal",
+    "universidade estadual", "secretaria municipal", "secretaria de saude",
+    "secretaria de educacao", "vestibular", "selecao publica",
+    "lei organica", "vinculo estatutario", "retifica", "fhemig", "seplag",
+    "fundacao hospitalar", "fundacao hospital", "spdm", "pci concursos",
+    "ache concursos", "direcao concursos", "consulplan", "cr de aprovados",
 ]
 
 # Nomes de empregador que indicam vaga publica (checados no campo empresa).
@@ -238,7 +249,11 @@ def classificar(titulo: str) -> tuple[str, str]:
     return categoria, nivel
 
 
-def extrair_cidade(titulo: str, local: str, descricao: str) -> str:
+def extrair_cidade(titulo: str, local: str, descricao: str,
+                   cidade_conhecida: str = "") -> str:
+    # Se a fonte ja informou a cidade exata (ex.: API da Gupy), usa ela.
+    if cidade_conhecida and sem_acento(cidade_conhecida) != "minas gerais":
+        return cidade_conhecida
     texto = sem_acento(f"{local} {titulo} {descricao}")
     cidades = {
         "belo horizonte": "Belo Horizonte", "contagem": "Contagem",
@@ -261,15 +276,28 @@ def extrair_cidade(titulo: str, local: str, descricao: str) -> str:
 def resumir(descricao: str, limite: int = 240) -> str:
     if not descricao:
         return "Abra a vaga para ver os detalhes e requisitos."
-    texto = re.sub(r"<[^>]+>", " ", descricao)       # remove HTML
-    texto = re.sub(r"\s+", " ", texto).strip()
+    texto = re.sub(r"<[^>]+>", " ", descricao)       # remove tags HTML
+    texto = limpar_texto(texto)                       # decodifica entidades
     if len(texto) <= limite:
         return texto
     return texto[:limite].rsplit(" ", 1)[0] + "..."
 
 
-def id_vaga(titulo: str, empresa: str, cidade: str) -> str:
-    base = sem_acento(f"{titulo}|{empresa}|{cidade}")
+def normalizar_link(link: str) -> str:
+    """Remove querystring/fragmento para o link virar chave estavel da vaga."""
+    if not link:
+        return ""
+    link = link.split("#", 1)[0].split("?", 1)[0]
+    return link.rstrip("/").lower()
+
+
+def id_vaga(link: str, titulo: str = "", empresa: str = "", cidade: str = "") -> str:
+    """ID estavel baseado no LINK (chave natural unica da vaga).
+
+    Se nao houver link, cai para titulo|empresa|cidade (compatibilidade com
+    vagas-semente antigas).
+    """
+    base = normalizar_link(link) or sem_acento(f"{titulo}|{empresa}|{cidade}")
     return hashlib.md5(base.encode()).hexdigest()[:12]
 
 
@@ -299,18 +327,66 @@ def parse_rss(xml_texto: str, fonte: str) -> list[dict]:
     return vagas
 
 
-def empresa_de_url_gupy(job_url: str, fallback: str) -> str:
-    """Extrai o nome da empresa do subdominio da career page Gupy.
+# Mapa de subdominios Gupy conhecidos -> nome amigavel da empresa.
+EMPRESAS_GUPY = {
+    "mrveco": "MRV&CO", "santacasabh": "Santa Casa BH",
+    "cocacolafemsabr": "Coca-Cola FEMSA", "fornodeminas": "Forno de Minas",
+    "vinci-energies": "Vinci Energies", "densosa": "Denso",
+    "bat": "BAT", "hmdcc": "Hospital Metropolitano Dr. Celio de Castro",
+    "valgroup": "Valgroup", "britvic": "Britvic", "bauducco": "Bauducco",
+    "piracanjuba": "Piracanjuba", "selpe": "Selpe", "tambasa": "Tambasa",
+    "cocacolafemsabr": "Coca-Cola FEMSA", "vero": "Vero",
+    "prumoengenharia": "Prumo Engenharia", "medmais": "Medmais",
+    "direcionalengenharia": "Direcional Engenharia", "allonda": "Allonda",
+}
 
-    Ex.: https://vagas-mrveco.gupy.io/... -> "Mrveco".
+# Fontes que foram aposentadas: entradas antigas com essa origem sao expurgadas
+# do arquivo no proximo merge (nao serao recoletadas).
+FONTES_APOSENTADAS = ("Google News",)
+
+# Termos que aparecem em career pages "confidenciais" da Gupy.
+_CONFIDENCIAL = ("confidencial", "confidential", "confidencialidade")
+# Ruido que vem grudado no subdominio e nao faz parte do nome da empresa.
+_RUIDO_SLUG = (
+    "vagas", "vaga", "carreiras", "carreira", "trabalheconosco",
+    "venha", "oportunidades", "oportunidade", "temporarias", "temporaria",
+    "pagina", "oficial", "grupo", "br", "sa", "vempra", "vempro", "acele",
+    "sua", "talentos", "trabalhe", "conosco",
+)
+
+
+def empresa_de_url_gupy(job_url: str, fallback: str) -> str:
+    """Deriva um nome de empresa legivel do subdominio da career page Gupy.
+
+    Ex.: vagas-mrveco.gupy.io -> "MRV&CO"; xptoconfidencial.gupy.io ->
+    "Empresa confidencial".
     """
     m = re.search(r"https?://([^.]+)\.gupy\.io", job_url or "")
     if not m:
-        return fallback or "Nao informada"
-    slug = m.group(1)
-    slug = re.sub(r"^vagas?-?", "", slug)        # tira prefixo "vagas-"
-    slug = slug.replace("-", " ").strip()
-    return slug.title() if slug else (fallback or "Nao informada")
+        return limpar_texto(fallback) or "Nao informada"
+    slug = m.group(1).lower()
+    # chave do mapa: ignora prefixo "vagas-"/"vaga-" (ex.: vagas-mrveco -> mrveco)
+    slug_base = re.sub(r"^vagas?-", "", slug)
+
+    if slug in EMPRESAS_GUPY:
+        return EMPRESAS_GUPY[slug]
+    if slug_base in EMPRESAS_GUPY:
+        return EMPRESAS_GUPY[slug_base]
+    if any(c in slug for c in _CONFIDENCIAL):
+        return "Empresa confidencial"
+
+    # quebra em palavras e remove ruido conhecido
+    bruto = slug.replace("_", "-")
+    palavras = [p for p in re.split(r"[-]", bruto) if p]
+    palavras = [p for p in palavras if p not in _RUIDO_SLUG]
+    # se nao tinha hifen, tenta tirar prefixo "vagas" colado
+    if len(palavras) == 1:
+        palavras[0] = re.sub(r"^(vagas?|venha|trabalhe)", "", palavras[0]) or palavras[0]
+    nome = " ".join(palavras).strip()
+    if not nome:
+        return limpar_texto(fallback) or "Nao informada"
+    # acronimo curto vira maiusculo; senao Title Case
+    return nome.upper() if len(nome) <= 4 else nome.title()
 
 
 def _gupy_vaga_mg(j: dict, vistos_links: set) -> dict | None:
@@ -323,13 +399,15 @@ def _gupy_vaga_mg(j: dict, vistos_links: set) -> dict | None:
         return None
     vistos_links.add(link)
     empresa = empresa_de_url_gupy(link, j.get("careerPageName", ""))
+    cidade = limpar_texto(j.get("city") or "")
     return {
-        "titulo": (j.get("name") or "").strip(),
+        "titulo": limpar_texto(j.get("name") or ""),
         "link": link,
         "descricao": j.get("description") or "",
         "data_origem": j.get("publishedDate") or "",
         "empresa": empresa,
-        "local": f"{j.get('city','')} {estado}".strip(),
+        "local": f"{cidade} {estado}".strip(),
+        "cidade_origem": cidade,           # cidade exata vinda da API
         "fonte": "Gupy",
     }
 
@@ -391,9 +469,10 @@ def processar(brutas: list[dict]) -> list[dict]:
         if not eh_minas_gerais(titulo, desc, local):
             continue
 
-        empresa = empresa_bruta or "Nao informada"
-        cidade = extrair_cidade(titulo, local, desc)
-        vid = id_vaga(titulo, empresa, cidade)
+        empresa = limpar_texto(empresa_bruta) or "Nao informada"
+        titulo = limpar_texto(titulo)
+        cidade = extrair_cidade(titulo, local, desc, v.get("cidade_origem", ""))
+        vid = id_vaga(v.get("link", ""), titulo, empresa, cidade)
         if vid in vistos:
             continue
         vistos.add(vid)
@@ -401,7 +480,7 @@ def processar(brutas: list[dict]) -> list[dict]:
         categoria, nivel = classificar(titulo)
         finais.append({
             "id": vid,
-            "titulo": titulo.strip(),
+            "titulo": titulo,
             "empresa": empresa,
             "cidade": cidade,
             "categoria": categoria,
@@ -425,25 +504,37 @@ def mesclar_com_existente(novas: list[dict]) -> list[dict]:
             existentes = []
 
     hoje = datetime.date.today()
-    por_id = {}
+    por_chave = {}
 
-    # mantem existentes: as fixas nunca expiram; as demais, dentro da validade
+    def chave(v: dict) -> str:
+        # link normalizado e a chave natural; cai para id quando nao houver link
+        return normalizar_link(v.get("link", "")) or v.get("id", "")
+
+    # mantem existentes: as fixas nunca expiram; as demais, dentro da validade.
+    # Reaplica o filtro de concurso para EXPURGAR vagas publicas que entraram
+    # antes do filtro ser reforcado.
     for v in existentes:
-        if v.get("fixa"):
-            por_id[v["id"]] = v
-            continue
-        try:
-            dc = datetime.date.fromisoformat(v.get("data_coleta", hoje.isoformat()))
-        except Exception:
-            dc = hoje
-        if (hoje - dc).days <= DIAS_VALIDADE:
-            por_id[v["id"]] = v
+        if not v.get("fixa"):
+            fonte = v.get("fonte", "")
+            if any(fonte.startswith(f) for f in FONTES_APOSENTADAS):
+                continue  # origem aposentada (so trazia ruido): descarta
+            texto = f"{v.get('titulo','')} {v.get('resumo','')}"
+            if not eh_vaga_sst(texto, "", v.get("empresa", "")):
+                continue  # era concurso/publico ou nao-SST: descarta
+            try:
+                dc = datetime.date.fromisoformat(v.get("data_coleta", hoje.isoformat()))
+            except Exception:
+                dc = hoje
+            if (hoje - dc).days > DIAS_VALIDADE:
+                continue  # vaga vencida
+        por_chave[chave(v)] = v
 
-    # adiciona novas (novas sobrescrevem para atualizar data)
+    # adiciona novas (novas sobrescrevem a versao antiga da mesma vaga,
+    # trazendo nome de empresa/cidade ja limpos e data atualizada)
     for v in novas:
-        por_id[v["id"]] = v
+        por_chave[chave(v)] = v
 
-    lista = list(por_id.values())
+    lista = list(por_chave.values())
     lista.sort(key=lambda x: x.get("data_coleta", ""), reverse=True)
     return lista
 
