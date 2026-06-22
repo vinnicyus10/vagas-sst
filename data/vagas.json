@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "22/06/2026 14:44",
-  "total": 67,
+  "atualizado_em": "22/06/2026 18:51",
+  "total": 68,
   "vagas": [
     {
       "id": "41164025a2de",
@@ -579,18 +579,6 @@
       "data_coleta": "2026-06-22"
     },
     {
-      "id": "debbe8b7ed03",
-      "titulo": "Técnico(a) de Segurança",
-      "empresa": "Vemprotime",
-      "cidade": "Minas Gerais",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
-      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-06-22"
-    },
-    {
       "id": "96cc2006bc08",
       "titulo": "Técnica ou Técnico de Segurança do Trabalho Pleno",
       "empresa": "Ldcelulose",
@@ -599,6 +587,30 @@
       "nivel": "Pleno",
       "resumo": "Já se imaginou trabalhando em uma das maiores fábricas de celulose solúvel do mundo? 🔥🚀 #VemSerLDCTeam Vaga: Técnica ou Técnico de Segurança do Trabalho PlenoLocal: Indianópolis-MGModelo de contratação: Efetivo-CLTInscrições até: 19/Junho...",
       "link": "https://ldcelulose.gupy.io/job/eyJqb2JJZCI6MTEzNDQzOTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-22"
+    },
+    {
+      "id": "b252c4cb89da",
+      "titulo": "Técnico (a) em Segurança do Trabalho | Pouso Alegre",
+      "empresa": "Grupomonto",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Estamos em busca de um(a) Técnico(a) de Segurança do Trabalho com atuação em campo, responsável por identificar riscos, orientar equipes e garantir o cumprimento das normas de SST em obras. O profissional atuará diretamente nas frentes...",
+      "link": "https://grupomonto.gupy.io/job/eyJqb2JJZCI6MTE1MjI2NzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-22"
+    },
+    {
+      "id": "debbe8b7ed03",
+      "titulo": "Técnico(a) de Segurança",
+      "empresa": "Vemprotime",
+      "cidade": "Minas Gerais",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
+      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-06-22"
     },
