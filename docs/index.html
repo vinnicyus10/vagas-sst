@@ -32,6 +32,14 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:0.001ms!important;animation-iteration-count:1!important;transition-duration:0.001ms!important;scroll-behavior:auto!important}
+}
 
 /* ── CANVAS BG ── */
 #bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0.5}
@@ -47,8 +55,18 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ── NAV ── */
+.nav-bar{
+  position:sticky;top:0;z-index:100;
+  border-bottom:1px solid transparent;
+  transition:background-color 0.3s ease,border-color 0.3s ease,backdrop-filter 0.3s ease;
+}
+.nav-bar.scrolled{
+  background:rgba(6,9,18,0.72);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom-color:var(--border);
+}
 .nav{
-  position:relative;z-index:100;
+  position:relative;z-index:1;
   max-width:1120px;margin:0 auto;
   display:flex;align-items:center;justify-content:space-between;
   padding:20px 28px;
@@ -169,6 +187,14 @@ a{color:inherit;text-decoration:none}
   font-size:16px;
 }
 
+/* ── SPOTLIGHT HOVER ── */
+.spot{
+  position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  opacity:0;transition:opacity 0.35s ease;
+  background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),rgba(96,165,250,0.22),rgba(245,166,35,0.05) 45%,transparent 70%);
+}
+.stat-card:hover .spot,.vaga:hover .spot{opacity:1}
+
 /* ── DIVIDER ── */
 .section-divider{
   position:relative;z-index:1;
@@ -285,7 +311,7 @@ a{color:inherit;text-decoration:none}
   font-size:13px;color:var(--text2);
 }
 .btn-ver{
-  flex-shrink:0;
+  position:relative;overflow:hidden;flex-shrink:0;
   display:inline-flex;align-items:center;gap:6px;
   background:linear-gradient(135deg,#2563eb,#3b82f6);
   color:#fff;font-size:13px;font-weight:600;
@@ -294,6 +320,12 @@ a{color:inherit;text-decoration:none}
   transition:transform 0.15s,box-shadow 0.15s,opacity 0.15s;
   box-shadow:0 2px 12px rgba(59,130,246,0.25);
 }
+.btn-ver::after{
+  content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transform:skewX(-20deg);transition:left 0.5s ease;
+}
+.btn-ver:hover::after{left:130%}
 .btn-ver:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(59,130,246,0.4);opacity:0.95}
 .btn-ver:active{transform:translateY(0)}
 
@@ -316,6 +348,12 @@ a{color:inherit;text-decoration:none}
   padding-top:12px;border-top:1px solid var(--border);
 }
 .data-txt{font-size:11.5px;color:var(--text3)}
+
+/* ── SKELETON ── */
+@keyframes shimmer{0%{background-position:-300px 0}100%{background-position:300px 0}}
+.sk{background:linear-gradient(90deg,var(--surface) 25%,var(--surface2) 37%,var(--surface) 63%);background-size:600px 100%;animation:shimmer 1.6s infinite linear;border-radius:16px;border:1px solid var(--border)}
+.sk-stat{height:96px}
+.sk-vaga{height:148px}
 
 /* ── EMPTY ── */
 .vazio{
@@ -354,6 +392,7 @@ footer a:hover{color:#fff}
 <div class="grid-overlay"></div>
 
 <!-- NAV -->
+<div class="nav-bar" id="navbar">
 <nav class="nav">
   <div class="logo">
     <div class="logo-mark">
@@ -391,6 +430,7 @@ footer a:hover{color:#fff}
     </div>
   </div>
 </nav>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -405,7 +445,9 @@ footer a:hover{color:#fff}
 </section>
 
 <!-- STATS -->
-<div class="stats-wrap" id="stats"></div>
+<div class="stats-wrap" id="stats">
+  <div class="sk sk-stat"></div><div class="sk sk-stat"></div><div class="sk sk-stat"></div><div class="sk sk-stat"></div>
+</div>
 
 <!-- DIVIDER -->
 <div class="section-divider">
@@ -458,7 +500,9 @@ footer a:hover{color:#fff}
     <div class="result-bar">
       <div class="result-count" id="resultado-info"></div>
     </div>
-    <main class="lista" id="lista"></main>
+    <main class="lista" id="lista">
+      <div class="sk sk-vaga"></div><div class="sk sk-vaga"></div><div class="sk sk-vaga"></div>
+    </main>
   </div>
 </div>
 
@@ -500,6 +544,23 @@ footer a:hover{color:#fff}
   }
   draw();
 })();
+
+/* ── STICKY NAV BLUR ── */
+(function(){
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+/* ── CARD SPOTLIGHT (cursor-tracked glow) ── */
+document.addEventListener('mousemove', e => {
+  const card = e.target.closest('.stat-card, .vaga');
+  if(!card) return;
+  const r = card.getBoundingClientRect();
+  card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+});
 
 /* ── DATA ── */
 let TODAS = [];
@@ -553,6 +614,7 @@ function montarStats(d){
   const items=[[total,'Vagas ativas'],[novas,'Novas hoje'],[tec,'Técnico'],[cidades,'Cidades']];
   document.getElementById('stats').innerHTML=items.map(([n,l],i)=>`
     <div class="stat-card">
+      <div class="spot"></div>
       <div class="stat-icon" style="background:rgba(${['245,166,35','59,130,246','34,197,94','167,139,250'][i]},0.1)">${ICONS[i]}</div>
       <div class="stat-num ${CORES[i]}" data-target="${n}">0</div>
       <div class="stat-lab">${l}</div>
@@ -595,6 +657,7 @@ function render(){
     const rc=rotuloChegada(v);
     return `
     <article class="vaga${rc.nova?' vaga-nova':''}" style="animation-delay:${Math.min(i*30,300)}ms">
+      <div class="spot"></div>
       <div class="vaga-head">
         <div>
           <h3>${esc(v.titulo)}${rc.nova?' <span class="badge-nova">NOVA</span>':''}</h3>
