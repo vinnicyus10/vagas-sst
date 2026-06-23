@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "23/06/2026 12:10",
-  "total": 68,
+  "atualizado_em": "23/06/2026 17:20",
+  "total": 69,
   "vagas": [
+    {
+      "id": "c1192206a0af",
+      "titulo": "INSTRUTOR(A) EM SEGURANÇA DO TRABALHO (BELO HORIZONTE)",
+      "empresa": "Empresa confidencial",
+      "cidade": "Belo Horizonte",
+      "categoria": "Outros",
+      "nivel": "Nao informado",
+      "resumo": "Empresa atuante em nível nacional está com oportunidade disponível para Belo Horizonte-MG.Responsabilidades e atribuiçõesVocê será responsável por:Ser o responsável pelos treinamentos para a área de Segurança do Trabalho;Elaborar materiais...",
+      "link": "https://confidentialopportunity.gupy.io/job/eyJqb2JJZCI6MTE1MDk4OTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-23",
+      "data_primeira": "2026-06-23"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
