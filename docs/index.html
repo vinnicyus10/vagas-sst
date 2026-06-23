@@ -262,6 +262,22 @@ a{color:inherit;text-decoration:none}
 }
 @keyframes slide-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
+/* vaga que chegou nas ultimas 24-48h */
+.vaga-nova{border-color:rgba(34,197,94,0.35)}
+.vaga-nova::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#22c55e,#16a34a);
+}
+.badge-nova{
+  display:inline-block;vertical-align:middle;margin-left:7px;
+  font-size:9.5px;font-weight:800;letter-spacing:0.08em;
+  color:#04140a;background:linear-gradient(135deg,#4ade80,#22c55e);
+  padding:2px 7px;border-radius:99px;
+  box-shadow:0 0 14px rgba(34,197,94,0.45);
+  animation:pulse-nova 1.8s ease-in-out infinite;
+}
+@keyframes pulse-nova{0%,100%{box-shadow:0 0 10px rgba(34,197,94,0.35)}50%{box-shadow:0 0 18px rgba(34,197,94,0.65)}}
+
 .vaga-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
 .vaga h3{font-size:15.5px;font-weight:700;color:#fff;letter-spacing:-0.01em;line-height:1.3;margin-bottom:5px}
 .vaga .empresa{
@@ -425,6 +441,16 @@ footer a:hover{color:#fff}
         <div class="f-label">Nível</div>
         <select id="f-nivel" class="f-select"><option value="">Todos os níveis</option></select>
       </div>
+      <div class="f-section">
+        <div class="f-label">Quando chegou</div>
+        <select id="f-quando" class="f-select">
+          <option value="">Qualquer data</option>
+          <option value="0">Chegaram hoje</option>
+          <option value="2">Últimos 3 dias</option>
+          <option value="7">Últimos 7 dias</option>
+          <option value="30">Últimos 30 dias</option>
+        </select>
+      </div>
     </div>
   </aside>
 
@@ -437,7 +463,7 @@ footer a:hover{color:#fff}
 </div>
 
 <footer>
-  Vagas coletadas automaticamente de portais públicos — EmpregJusto, Google News, Agrobase e outros.<br>
+  Vagas coletadas automaticamente de portais de empresas privadas — Gupy, EmpregJusto e outros. Atualizado várias vezes ao dia.<br>
   Confirme sempre os detalhes no link original. ·
   <a href="https://github.com/vinnicyus10/vagas-sst" target="_blank" rel="noopener">Código no GitHub</a>
 </footer>
@@ -495,7 +521,24 @@ async function carregar(){
 }
 
 const CORES = ['c-amber','c-blue','c-green','c-purple'];
-const ICONS = ['🛡️','⚙️','🏙️','📍'];
+const ICONS = ['🛡️','🆕','🔧','📍'];
+
+/* ── DATAS ── */
+function diasDesde(iso){
+  if(!iso) return 9999;
+  const d=new Date(iso+'T00:00:00'); if(isNaN(d)) return 9999;
+  const hoje=new Date(); hoje.setHours(0,0,0,0);
+  return Math.round((hoje-d)/86400000);
+}
+function dataChegada(v){ return v.data_primeira||v.data_coleta; }
+function rotuloChegada(v){
+  const n=diasDesde(dataChegada(v));
+  if(n<=0) return {txt:'Chegou hoje',nova:true};
+  if(n===1) return {txt:'Chegou ontem',nova:true};
+  if(n<7) return {txt:`Há ${n} dias`,nova:false};
+  if(n<30) return {txt:`Há ${Math.floor(n/7)} sem.`,nova:false};
+  return {txt:`Há ${Math.floor(n/30)} mês(es)`,nova:false};
+}
 
 function animCount(el,target){
   let n=0,step=Math.ceil(target/30);
@@ -504,10 +547,10 @@ function animCount(el,target){
 
 function montarStats(d){
   const total=d.total??TODAS.length;
-  const eng=TODAS.filter(v=>v.categoria==='Engenharia').length;
   const tec=TODAS.filter(v=>v.categoria==='Tecnico').length;
+  const novas=TODAS.filter(v=>diasDesde(dataChegada(v))<=0).length;
   const cidades=new Set(TODAS.map(v=>v.cidade)).size;
-  const items=[[total,'Vagas ativas'],[eng,'Engenharia'],[tec,'Técnico'],[cidades,'Cidades']];
+  const items=[[total,'Vagas ativas'],[novas,'Novas hoje'],[tec,'Técnico'],[cidades,'Cidades']];
   document.getElementById('stats').innerHTML=items.map(([n,l],i)=>`
     <div class="stat-card">
       <div class="stat-icon" style="background:rgba(${['245,166,35','59,130,246','34,197,94','167,139,250'][i]},0.1)">${ICONS[i]}</div>
@@ -533,10 +576,12 @@ function render(){
   const fc=document.getElementById('f-categoria').value;
   const fci=document.getElementById('f-cidade').value;
   const fn=document.getElementById('f-nivel').value;
+  const fq=document.getElementById('f-quando').value;
   const lista=TODAS.filter(v=>{
     if(fc&&v.categoria!==fc)return false;
     if(fci&&v.cidade!==fci)return false;
     if(fn&&v.nivel!==fn)return false;
+    if(fq!==''&&diasDesde(dataChegada(v))>parseInt(fq))return false;
     if(q){const alvo=[v.titulo,v.empresa,v.cidade,v.resumo].join(' ').toLowerCase();if(!alvo.includes(q))return false}
     return true;
   });
@@ -546,11 +591,13 @@ function render(){
     cont.innerHTML=`<div class="vazio"><strong>Nenhuma vaga com esses filtros</strong>Tente ajustar os filtros ou limpar a busca.</div>`;
     return;
   }
-  cont.innerHTML=lista.map((v,i)=>`
-    <article class="vaga" style="animation-delay:${Math.min(i*30,300)}ms">
+  cont.innerHTML=lista.map((v,i)=>{
+    const rc=rotuloChegada(v);
+    return `
+    <article class="vaga${rc.nova?' vaga-nova':''}" style="animation-delay:${Math.min(i*30,300)}ms">
       <div class="vaga-head">
         <div>
-          <h3>${esc(v.titulo)}</h3>
+          <h3>${esc(v.titulo)}${rc.nova?' <span class="badge-nova">NOVA</span>':''}</h3>
           <div class="empresa">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             ${esc(v.empresa)}
@@ -569,23 +616,23 @@ function render(){
       </div>
       ${v.resumo?`<div class="resumo">${esc(v.resumo)}</div>`:''}
       <div class="vaga-foot">
-        <span class="data-txt">Coletada em ${esc(v.data_coleta||'—')}</span>
+        <span class="data-txt">🕒 ${rc.txt}</span>
       </div>
-    </article>`).join('');
+    </article>`;}).join('');
 }
 
 function limparFiltros(){
-  ['busca','f-categoria','f-cidade','f-nivel'].forEach(id=>{
-    const el=document.getElementById(id);
-    if(el.tagName==='INPUT')el.value='';else el.value='';
+  ['busca','f-categoria','f-cidade','f-nivel','f-quando'].forEach(id=>{
+    document.getElementById(id).value='';
   });
   render();
 }
 
 function esc(s){return(s??'').toString().replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 
-['busca','f-categoria','f-cidade','f-nivel'].forEach(id=>{
+['busca','f-categoria','f-cidade','f-nivel','f-quando'].forEach(id=>{
   document.getElementById(id).addEventListener('input',render);
+  document.getElementById(id).addEventListener('change',render);
 });
 carregar();
 </script>

@@ -478,6 +478,7 @@ def processar(brutas: list[dict]) -> list[dict]:
         vistos.add(vid)
 
         categoria, nivel = classificar(titulo)
+        hoje_iso = datetime.date.today().isoformat()
         finais.append({
             "id": vid,
             "titulo": titulo,
@@ -488,7 +489,8 @@ def processar(brutas: list[dict]) -> list[dict]:
             "resumo": resumir(desc),
             "link": v.get("link"),
             "fonte": v.get("fonte", ""),
-            "data_coleta": datetime.date.today().isoformat(),
+            "data_coleta": hoje_iso,        # ultima vez que foi vista (muda)
+            "data_primeira": hoje_iso,      # 1a vez no site (estavel; ajustada no merge)
         })
     return finais
 
@@ -510,6 +512,9 @@ def mesclar_com_existente(novas: list[dict]) -> list[dict]:
         # link normalizado e a chave natural; cai para id quando nao houver link
         return normalizar_link(v.get("link", "")) or v.get("id", "")
 
+    # data em que cada vaga ja conhecida apareceu pela 1a vez (estavel)
+    primeira_conhecida = {}
+
     # mantem existentes: as fixas nunca expiram; as demais, dentro da validade.
     # Reaplica o filtro de concurso para EXPURGAR vagas publicas que entraram
     # antes do filtro ser reforcado.
@@ -527,15 +532,24 @@ def mesclar_com_existente(novas: list[dict]) -> list[dict]:
                 dc = hoje
             if (hoje - dc).days > DIAS_VALIDADE:
                 continue  # vaga vencida
+        # backfill: dados antigos nao tinham data_primeira
+        v.setdefault("data_primeira", v.get("data_coleta", hoje.isoformat()))
+        primeira_conhecida[chave(v)] = v["data_primeira"]
         por_chave[chave(v)] = v
 
     # adiciona novas (novas sobrescrevem a versao antiga da mesma vaga,
-    # trazendo nome de empresa/cidade ja limpos e data atualizada)
+    # trazendo nome de empresa/cidade ja limpos e data atualizada). Preserva a
+    # data_primeira ja conhecida para a vaga nao "rejuvenescer" a cada coleta.
     for v in novas:
-        por_chave[chave(v)] = v
+        k = chave(v)
+        if k in primeira_conhecida:
+            v["data_primeira"] = primeira_conhecida[k]
+        por_chave[k] = v
 
     lista = list(por_chave.values())
-    lista.sort(key=lambda x: x.get("data_coleta", ""), reverse=True)
+    # ordena por chegada mais recente primeiro, depois ultima coleta
+    lista.sort(key=lambda x: (x.get("data_primeira", ""), x.get("data_coleta", "")),
+               reverse=True)
     return lista
 
 
