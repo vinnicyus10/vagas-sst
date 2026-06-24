@@ -642,7 +642,7 @@ let TODAS = [];
 
 async function carregar(){
   try{
-    const r = await fetch('data/vagas.json?t='+Date.now());
+    const r = await fetch('data/vagas.json?t='+Date.now(),{cache:'no-store'});
     const d = await r.json();
     TODAS = d.vagas||[];
     const el = document.getElementById('atualizado');

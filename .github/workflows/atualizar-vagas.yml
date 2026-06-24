@@ -1,14 +1,15 @@
 name: Atualizar vagas SST
 
-# Roda automaticamente 4x por dia (06h, 12h, 15h, 18h horario de Brasilia =
-# 09h, 15h, 18h, 21h UTC) e tambem pode ser disparado manualmente pelo botao
-# "Run workflow".
+# Atualiza o site TODOS OS DIAS, com a rodada principal ao MEIO-DIA de Brasilia.
+# Brasilia (UTC-3):  09h = 12 UTC | 12h(meio-dia) = 15 UTC | 16h = 19 UTC
+# Obs.: o agendador do GitHub Actions pode atrasar alguns minutos em horarios
+# de pico - por isso ha tambem uma rodada de manha e outra a tarde, garantindo
+# que o site nunca passe um dia sem atualizar.
 on:
   schedule:
-    - cron: "0 9 * * *"
-    - cron: "0 15 * * *"
-    - cron: "0 18 * * *"
-    - cron: "0 21 * * *"
+    - cron: "0 12 * * *"   # 09h Brasilia (manha)
+    - cron: "0 15 * * *"   # 12h Brasilia (MEIO-DIA - rodada principal)
+    - cron: "0 19 * * *"   # 16h Brasilia (tarde)
   workflow_dispatch:
 
 permissions:
