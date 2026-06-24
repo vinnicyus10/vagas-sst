@@ -1,7 +1,33 @@
 {
-  "atualizado_em": "24/06/2026 11:47",
-  "total": 72,
+  "atualizado_em": "24/06/2026 17:10",
+  "total": 74,
   "vagas": [
+    {
+      "id": "23086cfc5158",
+      "titulo": "Técnico de Segurança do Trabalho III",
+      "empresa": "Vempranexa",
+      "cidade": "Vazante",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "De acordo com o nosso compromisso com a diversidade e a inclusão, estamos encorajados a receber candidaturas de mulheres para esta posição. Por isso, encorajamos todas as pessoas qualificadas a se candidatarem, independentemente de gênero,...",
+      "link": "https://vempranexa.gupy.io/job/eyJqb2JJZCI6MTE1NDA4MTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-24",
+      "data_primeira": "2026-06-24"
+    },
+    {
+      "id": "00d8a71e7c6c",
+      "titulo": "Técnico(a) de Segurança do Trabalho Junior",
+      "empresa": "Tsaengenharia",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
+      "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTE1Mjc3NjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-24",
+      "data_primeira": "2026-06-24"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
