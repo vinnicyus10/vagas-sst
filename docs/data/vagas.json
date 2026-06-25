@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "25/06/2026 17:19",
+  "atualizado_em": "25/06/2026 20:54",
   "total": 78,
   "vagas": [
     {
@@ -42,19 +42,6 @@
       "data_primeira": "2026-06-25"
     },
     {
-      "id": "debbe8b7ed03",
-      "titulo": "Técnico(a) de Segurança",
-      "empresa": "Vemprotime",
-      "cidade": "Minas Gerais",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
-      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-06-25",
-      "data_primeira": "2026-06-25"
-    },
-    {
       "id": "641ddc0ac86b",
       "titulo": "Assistente Pleno Sesmt - Belo Horizonte (MG)",
       "empresa": "Grupoelo",
@@ -68,8 +55,21 @@
       "data_primeira": "2026-06-25"
     },
     {
+      "id": "debbe8b7ed03",
+      "titulo": "Técnico(a) de Segurança",
+      "empresa": "Vemprotime",
+      "cidade": "Minas Gerais",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
+      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-25",
+      "data_primeira": "2026-06-25"
+    },
+    {
       "id": "23086cfc5158",
-      "titulo": "Técnico de Segurança do Trabalho III",
+      "titulo": "Técnico III - Segurança do Trabalho",
       "empresa": "Vempranexa",
       "cidade": "Vazante",
       "categoria": "Tecnico",
