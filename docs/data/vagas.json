@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "25/06/2026 13:54",
-  "total": 77,
+  "atualizado_em": "25/06/2026 17:19",
+  "total": 78,
   "vagas": [
     {
       "id": "efcced8695a3",
@@ -50,6 +50,19 @@
       "nivel": "Nao informado",
       "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
       "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-25",
+      "data_primeira": "2026-06-25"
+    },
+    {
+      "id": "641ddc0ac86b",
+      "titulo": "Assistente Pleno Sesmt - Belo Horizonte (MG)",
+      "empresa": "Grupoelo",
+      "cidade": "Belo Horizonte",
+      "categoria": "Outros",
+      "nivel": "Pleno",
+      "resumo": "Controle de admissão, gestão de agenda: ✔ Gestão de agenda médica/clínica✔ Controle e lançamento de atestados✔ Organização e controle de documentos✔ Recebimento de atestado✔ Suporte a processos Departamento PessoalResponsabilidades e...",
+      "link": "https://grupoelo.gupy.io/job/eyJqb2JJZCI6MTE0MTAyMjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-06-25",
       "data_primeira": "2026-06-25"
@@ -316,7 +329,7 @@
     },
     {
       "id": "8c989fa11447",
-      "titulo": "TECNICO SEGURANCA TRABALHO I",
+      "titulo": "TECNICO SEGURANCA TRABALHO II",
       "empresa": "Allonda",
       "cidade": "Brumadinho",
       "categoria": "Tecnico",
