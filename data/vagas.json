@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "26/06/2026 13:53",
-  "total": 78,
+  "atualizado_em": "26/06/2026 17:04",
+  "total": 79,
   "vagas": [
+    {
+      "id": "b50112e31dbf",
+      "titulo": "TECNICO DE SEGURANÇA DO TRABALHO",
+      "empresa": "Transpes",
+      "cidade": "Betim",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Na TRANSPES, valorizamos e respeitamos todas as pessoas! Buscamos profissionais comprometidos com a igualdade e oferecemos um ambiente de trabalho colaborativo, dinâmico e com excelentes chances de crescimento e desenvolvimento...",
+      "link": "https://transpes.gupy.io/job/eyJqb2JJZCI6MTE1Mzk4OTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-06-26",
+      "data_primeira": "2026-06-26"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
