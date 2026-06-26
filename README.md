@@ -51,7 +51,7 @@ Troque `SEU_USUARIO` pelo seu nome de usuário do GitHub.
 1. No seu repositório, clique em **Settings** (engrenagem no topo).
 2. No menu lateral, clique em **Pages**.
 3. Em *Source*, escolha **Deploy from a branch**.
-4. Em *Branch*, escolha **main** e a pasta **/site**. Clique em **Save**.
+4. Em *Branch*, escolha **main** e a pasta **/docs**. Clique em **Save**.
 5. Espere 1–2 minutos e atualize a página. Vai aparecer o link do seu site,
    algo como: `https://SEU_USUARIO.github.io/vagas-sst/`
 
@@ -95,8 +95,8 @@ vagas-sst/
 │   └── coletar_vagas.py        # o robô que coleta e filtra
 ├── data/
 │   └── vagas.json              # banco de vagas (gerado pelo robô)
-├── site/
-│   ├── index.html              # o site em si
+├── docs/
+│   ├── index.html              # o site em si (servido pelo GitHub Pages)
 │   └── data/vagas.json         # cópia que o site lê
 ├── .github/workflows/
 │   └── atualizar-vagas.yml      # agendador (roda o robô todo dia)
