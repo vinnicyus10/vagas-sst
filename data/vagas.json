@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "02/07/2026 13:23",
-  "total": 92,
+  "atualizado_em": "02/07/2026 16:56",
+  "total": 95,
   "vagas": [
     {
       "id": "1f33f9db10a8",
@@ -11,6 +11,45 @@
       "nivel": "Nao informado",
       "resumo": "O(a) profissional será responsável por liderar a área de Segurança do Trabalho e Emergências, garantindo um ambiente seguro e saudável na Kinross. Atuará na gestão de indicadores (KPIs), riscos e emergências, além de apoiar as áreas na...",
       "link": "https://kinross.gupy.io/job/eyJqb2JJZCI6MTExODYxNzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-02",
+      "data_primeira": "2026-07-02"
+    },
+    {
+      "id": "ae629b436dff",
+      "titulo": "TECNICO SEGURANÇA TRABALHO JR - UBERLÂNDIA I",
+      "empresa": "Emergentcoldlatam",
+      "cidade": "Uberlândia",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Faça parte do nosso timeSe você gosta de crescimento acelerado e de trabalhar em equipe, com pessoas entusiasmadas e que buscam sempre a excelência, você vai adorar sua carreira conosco!Faz parte dos nossos valores e código de conduta da...",
+      "link": "https://emergentcoldlatam.gupy.io/job/eyJqb2JJZCI6MTE1MTQ5ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-02",
+      "data_primeira": "2026-07-02"
+    },
+    {
+      "id": "d57ce9d361ce",
+      "titulo": "Estágio em Segurança do trabalho",
+      "empresa": "Smstalents",
+      "cidade": "Vespasiano",
+      "categoria": "Outros",
+      "nivel": "Estagio/Trainee",
+      "resumo": "O(a) Estagiário(a) em Segurança do Trabalho será responsável por acompanhar o Diálogo Diário de Segurança, apoiar no checklist de equipamentos, participar e apoiar na organização de campanhas de saúde e segurança e auxiliar no...",
+      "link": "https://smstalents.gupy.io/job/eyJqb2JJZCI6MTEyODQ3MDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-02",
+      "data_primeira": "2026-07-02"
+    },
+    {
+      "id": "a99f70eee2de",
+      "titulo": "Técnico(a) de Segurança",
+      "empresa": "Belgo",
+      "cidade": "Itaúna",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Aqui, são as pessoas que estão no centro da nossa estratégia. Com profissionais talentosos, responsáveis e comprometidos criamos produtos e soluções que impactam cada canto do país, geram resultados e proporcionam uma vida melhor.​Venha...",
+      "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE1NzQzMzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-02",
       "data_primeira": "2026-07-02"
