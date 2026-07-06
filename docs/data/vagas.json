@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "06/07/2026 17:48",
-  "total": 102,
+  "atualizado_em": "06/07/2026 20:51",
+  "total": 103,
   "vagas": [
     {
       "id": "295fabb91797",
@@ -24,6 +24,19 @@
       "nivel": "Nao informado",
       "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
       "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE1ODA5NjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-06",
+      "data_primeira": "2026-07-06"
+    },
+    {
+      "id": "24325edeee91",
+      "titulo": "Técnico (a) de Segurança do Trabalho | Frasle Mobility - Site Extrema - Nakata",
+      "empresa": "Randoncorp",
+      "cidade": "Extrema",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Nakata: tradição, qualidade e segurança começam pelas pessoas.Se você acredita que segurança vai além do cumprimento de normas e faz parte da essência do negócio, a Frasle Mobility, fabricante da Nakata e referência nacional no mercado...",
+      "link": "https://randoncorp.gupy.io/job/eyJqb2JJZCI6MTE1NjE4NTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-06",
       "data_primeira": "2026-07-06"
