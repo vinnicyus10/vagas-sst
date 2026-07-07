@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "07/07/2026 17:23",
+  "atualizado_em": "07/07/2026 20:48",
   "total": 105,
   "vagas": [
     {
@@ -887,6 +887,19 @@
       "data_primeira": "2026-06-21"
     },
     {
+      "id": "4abe1a45fc70",
+      "titulo": "Técnico em Segurança do Trabalho MG - Belo Horizonte I Contagem I Santa Luzia - Banco de Dados",
+      "empresa": "EN",
+      "cidade": "Santa Luzia",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
+      "link": "https://en.gupy.io/job/eyJqb2JJZCI6OTY5OTA3NCwic291cmNlIjoiZ3VweV9wb3J0YWwifQ==?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-07",
+      "data_primeira": "2026-06-21"
+    },
+    {
       "id": "48e1e90c249d",
       "titulo": "Técnico de Segurança do Trabalho I - Betim",
       "empresa": "MRV&CO",
@@ -960,19 +973,6 @@
       "nivel": "Nao informado",
       "resumo": "Estamos em busca de um(a) profissional comprometido(a) com a segurança e bem-estar dos colaboradores para atuar em ambiente industrial.Responsabilidades e atribuições➡️Como será o seu dia a dia?Você será responsável por elaborar e...",
       "link": "https://acelesuacarreira.gupy.io/job/eyJqb2JJZCI6MTExODc2NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-06-30",
-      "data_primeira": "2026-06-21"
-    },
-    {
-      "id": "4abe1a45fc70",
-      "titulo": "Técnico em Segurança do Trabalho MG - Belo Horizonte I Contagem I Santa Luzia - Banco de Dados",
-      "empresa": "EN",
-      "cidade": "Santa Luzia",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
-      "link": "https://en.gupy.io/job/eyJqb2JJZCI6OTY5OTA3NCwic291cmNlIjoiZ3VweV9wb3J0YWwifQ==?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-06-30",
       "data_primeira": "2026-06-21"
