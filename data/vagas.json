@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "09/07/2026 14:20",
-  "total": 107,
+  "atualizado_em": "09/07/2026 17:24",
+  "total": 108,
   "vagas": [
     {
       "id": "8c06a7fad32b",
@@ -11,6 +11,19 @@
       "nivel": "Pleno",
       "resumo": "Buscamos um Técnico de Segurança do Trabalho PL que atuará em atividades relacionadas a segurança.Na Armac, nos esforçamos diariamente para construir relacionamentos duradouros com nossos colaboradores e parceiros, com base na confiança,...",
       "link": "https://armac.gupy.io/job/eyJqb2JJZCI6MTE0MjUzNzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-09",
+      "data_primeira": "2026-07-09"
+    },
+    {
+      "id": "a02124eeea05",
+      "titulo": "Estágio em Segurança do Trabalho",
+      "empresa": "Belgo",
+      "cidade": "Contagem",
+      "categoria": "Outros",
+      "nivel": "Estagio/Trainee",
+      "resumo": "Proporcionamos um espaço de aprendizagem. Aqui, você terá a oportunidade de desenvolver projetos em sua área de atuação com impactos tangíveis em nossa empresa. Investimos em seu aprendizado, por meio de uma trilha de desenvolvimento que...",
+      "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE2MTA0NDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-09",
       "data_primeira": "2026-07-09"
@@ -337,7 +350,7 @@
       "resumo": "Será que você é o ingrediente que falta por aqui? Estamos em busca de uma pessoa apaixonada por segurança, para integrar o nosso time de Saúde e Segurança do Trabalho. Na Pif Paf Alimentos, você vai fazer parte de um time diverso, dinâmico...",
       "link": "https://pifpafalimentosadministrativo.gupy.io/job/eyJqb2JJZCI6MTE1NjUyNTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-07-06",
+      "data_coleta": "2026-07-09",
       "data_primeira": "2026-06-30"
     },
     {
@@ -406,6 +419,19 @@
       "data_primeira": "2026-06-25"
     },
     {
+      "id": "641ddc0ac86b",
+      "titulo": "Assistente Pleno Sesmt - Belo Horizonte (MG)",
+      "empresa": "Grupoelo",
+      "cidade": "Belo Horizonte",
+      "categoria": "Outros",
+      "nivel": "Pleno",
+      "resumo": "Controle de admissão, gestão de agenda: ✔ Gestão de agenda médica/clínica✔ Controle e lançamento de atestados✔ Organização e controle de documentos✔ Recebimento de atestado✔ Suporte a processos Departamento PessoalResponsabilidades e...",
+      "link": "https://grupoelo.gupy.io/job/eyJqb2JJZCI6MTE0MTAyMjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-09",
+      "data_primeira": "2026-06-25"
+    },
+    {
       "id": "4e94d30ce163",
       "titulo": "Técnico Segurança do Trabalho Jr.",
       "empresa": "Mantiqueirabrasil",
@@ -416,19 +442,6 @@
       "link": "https://mantiqueirabrasil.gupy.io/job/eyJqb2JJZCI6MTE1NDQ1NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-03",
-      "data_primeira": "2026-06-25"
-    },
-    {
-      "id": "641ddc0ac86b",
-      "titulo": "Assistente Pleno Sesmt - Belo Horizonte (MG)",
-      "empresa": "Grupoelo",
-      "cidade": "Belo Horizonte",
-      "categoria": "Outros",
-      "nivel": "Pleno",
-      "resumo": "Controle de admissão, gestão de agenda: ✔ Gestão de agenda médica/clínica✔ Controle e lançamento de atestados✔ Organização e controle de documentos✔ Recebimento de atestado✔ Suporte a processos Departamento PessoalResponsabilidades e...",
-      "link": "https://grupoelo.gupy.io/job/eyJqb2JJZCI6MTE0MTAyMjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-06-30",
       "data_primeira": "2026-06-25"
     },
     {
