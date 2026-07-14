@@ -1,7 +1,46 @@
 {
-  "atualizado_em": "14/07/2026 16:20",
-  "total": 112,
+  "atualizado_em": "14/07/2026 20:08",
+  "total": 115,
   "vagas": [
+    {
+      "id": "800f059c2671",
+      "titulo": "Estagio - Curso Técnico de Segurança do Trabalho",
+      "empresa": "Programa Estagio Ve",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Estagio/Trainee",
+      "resumo": "Acelerando a Transição Energética e a Transformação Digital Em um mundo em constante evolução, a VINCI Energies desempenha um papel fundamental na promoção da transição ambiental por meio da implementação de duas importantes mudanças:...",
+      "link": "https://programa-estagio-ve.gupy.io/job/eyJqb2JJZCI6MTE2Mzc0ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-14",
+      "data_primeira": "2026-07-14"
+    },
+    {
+      "id": "45eb1ca3c740",
+      "titulo": "Técnico | Técnica de Segurança do Trabalho Jr. (Implantação Transmissão)",
+      "empresa": "Alupar",
+      "cidade": "Nova Ponte",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "A Alupar é uma companhia brasileira multinacional referência no setor elétrico, atuando em frentes como geração, transmissão e comercialização de energia. Levamos confiabilidade e desenvolvimento por meio de nossos ativos que mantêm o...",
+      "link": "https://alupar.gupy.io/job/eyJqb2JJZCI6MTE2MzcxODQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-14",
+      "data_primeira": "2026-07-14"
+    },
+    {
+      "id": "c015d1b953f1",
+      "titulo": "TECNICO SEGURANCA TRABALHO III",
+      "empresa": "Allonda",
+      "cidade": "Brumadinho",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Venha fazer parte de um time Pulsante, Ousado e Incansável! Aqui na Allonda acreditamos no poder da transformação e somos mais de 1.000 integrantes espalhados pelo Brasil, transformando e impactando a vida das pessoas, a sociedade e o...",
+      "link": "https://allonda.gupy.io/job/eyJqb2JJZCI6MTE2MzQyNjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-14",
+      "data_primeira": "2026-07-14"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
