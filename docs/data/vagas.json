@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "15/07/2026 13:01",
-  "total": 116,
+  "atualizado_em": "15/07/2026 16:38",
+  "total": 118,
   "vagas": [
     {
       "id": "cfb0581abbf1",
@@ -11,6 +11,32 @@
       "nivel": "Nao informado",
       "resumo": "Venha fazer parte de um ecossistema vivo onde o futuro dos negócios é criado e vivido todos os dias. Faça parte desta transformação!Na LUZA Group, a paixão, a perseverança e a vontade de superar limites definem o nosso caminho para o...",
       "link": "https://luzagroup.gupy.io/job/eyJqb2JJZCI6MTE2MjgzNTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-15",
+      "data_primeira": "2026-07-15"
+    },
+    {
+      "id": "f99f291915b3",
+      "titulo": "Estagiário(a) de Segurança do Trabalho",
+      "empresa": "Labtest",
+      "cidade": "Lagoa Santa",
+      "categoria": "Outros",
+      "nivel": "Estagio/Trainee",
+      "resumo": "Venha fazer parte do time de Segurança e Medicina do Trabalho da Labtest! Temos uma oportunidade para Estagiário(a) de Segurança do TrabalhoComprometimento, respeito, excelência, foco em resultados, dinamismo, cordialidade, boa...",
+      "link": "https://labtest.gupy.io/job/eyJqb2JJZCI6MTE2NDYwNTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-15",
+      "data_primeira": "2026-07-15"
+    },
+    {
+      "id": "e72d7d0a78c8",
+      "titulo": "TECNICO SEGURANÇA DO TRABALHO (Barreiro/ MG)",
+      "empresa": "Logcp",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Você tem paixão pelo setor da construção civil e busca desenvolver sua carreira em uma empresa consolidada e em constante expansão? A LOG está com uma oportunidade para Técnico de Segurança do Trabalho e quer contar com o seu talento para...",
+      "link": "https://logcp.gupy.io/job/eyJqb2JJZCI6MTE2NDU4MzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-15",
       "data_primeira": "2026-07-15"
@@ -601,6 +627,19 @@
       "data_primeira": "2026-06-23"
     },
     {
+      "id": "4b54f48e5028",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Governador Valadares",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE1MzI2ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-15",
+      "data_primeira": "2026-06-23"
+    },
+    {
       "id": "f95c8c5e3ae2",
       "titulo": "Analista de Segurança do Trabalho PL - Betim MG - Vaga também para PcD",
       "empresa": "EN",
@@ -611,19 +650,6 @@
       "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE1MDE5OTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-13",
-      "data_primeira": "2026-06-23"
-    },
-    {
-      "id": "4b54f48e5028",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
-      "empresa": "Prumo Engenharia",
-      "cidade": "Governador Valadares",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
-      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE1MzI2ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-07-10",
       "data_primeira": "2026-06-23"
     },
     {
