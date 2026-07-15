@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "15/07/2026 16:38",
+  "atualizado_em": "15/07/2026 20:06",
   "total": 118,
   "vagas": [
     {
@@ -251,7 +251,7 @@
     },
     {
       "id": "09a1b8a6dad6",
-      "titulo": "Técnico de Segurança do Trabalho",
+      "titulo": "Técnico de Segurança do Trabalho (Belo Horizonte-MG)",
       "empresa": "Phdengenharia",
       "cidade": "Belo Horizonte",
       "categoria": "Tecnico",
@@ -328,6 +328,19 @@
       "data_primeira": "2026-07-02"
     },
     {
+      "id": "1f33f9db10a8",
+      "titulo": "Supervisor (a) Segurança do Trabalho e Emergência",
+      "empresa": "Kinross",
+      "cidade": "Paracatu",
+      "categoria": "Outros",
+      "nivel": "Nao informado",
+      "resumo": "O(a) profissional será responsável por liderar a área de Segurança do Trabalho e Emergências, garantindo um ambiente seguro e saudável na Kinross. Atuará na gestão de indicadores (KPIs), riscos e emergências, além de apoiar as áreas na...",
+      "link": "https://kinross.gupy.io/job/eyJqb2JJZCI6MTExODYxNzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-15",
+      "data_primeira": "2026-07-02"
+    },
+    {
       "id": "115b208859e4",
       "titulo": "TÉCNICO(A) SEGURANÇA DO TRABALHO III",
       "empresa": "Vemsercbmm",
@@ -338,19 +351,6 @@
       "link": "https://vemsercbmm.gupy.io/job/eyJqb2JJZCI6MTE1NjcwNzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-12",
-      "data_primeira": "2026-07-02"
-    },
-    {
-      "id": "1f33f9db10a8",
-      "titulo": "Supervisor (a) Segurança do Trabalho e Emergência",
-      "empresa": "Kinross",
-      "cidade": "Paracatu",
-      "categoria": "Outros",
-      "nivel": "Nao informado",
-      "resumo": "O(a) profissional será responsável por liderar a área de Segurança do Trabalho e Emergências, garantindo um ambiente seguro e saudável na Kinross. Atuará na gestão de indicadores (KPIs), riscos e emergências, além de apoiar as áreas na...",
-      "link": "https://kinross.gupy.io/job/eyJqb2JJZCI6MTExODYxNzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-07-10",
       "data_primeira": "2026-07-02"
     },
     {
