@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "16/07/2026 16:23",
-  "total": 119,
+  "atualizado_em": "16/07/2026 20:01",
+  "total": 121,
   "vagas": [
     {
       "id": "03883383f540",
@@ -11,6 +11,32 @@
       "nivel": "Nao informado",
       "resumo": "UMA EMPRESA BRASILEIRA, FEITA DE TALENTOS, PAIXÃO, MUITO ENTUSIASMO E DESAFIOS!Oi, somos a VAMOS! Um ecossistema único em alternativas para a renovação e expansão da frota brasileira. Com isso, desenvolvemos nosso negócio diariamente em...",
       "link": "https://vamos.gupy.io/job/eyJqb2JJZCI6MTE0NTMxMjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-16",
+      "data_primeira": "2026-07-16"
+    },
+    {
+      "id": "dea26b4318c6",
+      "titulo": "Analista de Segurança do Trabalho PL - Betim MG - Vaga também para PcD",
+      "empresa": "EN",
+      "cidade": "Betim",
+      "categoria": "Analista",
+      "nivel": "Pleno",
+      "resumo": "Atuar na área de Saúde, Segurança e Meio Ambiente para apoiar no suporte aos processos de indicadores de resultados, realização de procedimentos, mapeamento e manutenção dos projetos específicos da área SSMA, realizar e acompanhar as...",
+      "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE2MzMzNDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-16",
+      "data_primeira": "2026-07-16"
+    },
+    {
+      "id": "d644ff7883ba",
+      "titulo": "Técnico de Segurança do Trabalho Belo Horizonte",
+      "empresa": "MRV&CO",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Falar da MRV&CO (MRV, Urba, Luggo, Sensia e Resia) é dizer muito mais do que os títulos que recebemos durante nossa história de 45 anos. Ser uma das maiores construtoras da América Latina nos orgulha muito. Mas não só isso! Queremos mais e...",
+      "link": "https://vagas-mrveco.gupy.io/job/eyJqb2JJZCI6MTE2NjIyMzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-16",
       "data_primeira": "2026-07-16"
