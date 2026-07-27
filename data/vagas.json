@@ -1,10 +1,10 @@
 {
-  "atualizado_em": "27/07/2026 17:03",
-  "total": 121,
+  "atualizado_em": "27/07/2026 20:20",
+  "total": 122,
   "vagas": [
     {
       "id": "5b779271efe8",
-      "titulo": "Técnico de Segurança do Trabalho",
+      "titulo": "Técnico de Segurança do Trabalho IPATINGA/MG",
       "empresa": "Cipalam",
       "cidade": "Ipatinga",
       "categoria": "Tecnico",
@@ -29,6 +29,19 @@
       "data_primeira": "2026-07-27"
     },
     {
+      "id": "68d122d10c30",
+      "titulo": "Tecnico em Segurança do Trabalho",
+      "empresa": "Sagrupo",
+      "cidade": "Ribeirão das Neves",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Na SA Gôndolas de Aço, somos referência nacional em soluções para armazenamento e exposição no varejo.Com foco em qualidade, inovação e excelência no atendimento, produzimos estruturas metálicas que transformam o ambiente de vendas dos...",
+      "link": "https://sagrupo.gupy.io/job/eyJqb2JJZCI6MTE3MzEwNzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-27",
+      "data_primeira": "2026-07-27"
+    },
+    {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
       "empresa": "Vemprotime",
@@ -43,7 +56,7 @@
     },
     {
       "id": "0a660d9d2349",
-      "titulo": "Técnico de Segurança do Trabalho",
+      "titulo": "Técnico de Segurança do Trabalho / Itatiaiuçu-MG",
       "empresa": "Sigma Gp",
       "cidade": "Itatiaiuçu",
       "categoria": "Tecnico",
