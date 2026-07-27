@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "27/07/2026 14:02",
-  "total": 120,
+  "atualizado_em": "27/07/2026 17:03",
+  "total": 121,
   "vagas": [
     {
       "id": "5b779271efe8",
@@ -11,6 +11,19 @@
       "nivel": "Nao informado",
       "resumo": "A CIPALAM é uma empresa de Laminação de Perfis longos localizada na região do Vale do Aço/MG, que fabrica barras e perfis com aço carbono com os mais altos padrões de qualidade. Seus produtos podem ser empregados em várias modalidades,...",
       "link": "https://cipalam.gupy.io/job/eyJqb2JJZCI6MTE4MjM3MjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-27",
+      "data_primeira": "2026-07-27"
+    },
+    {
+      "id": "e353fb9cb074",
+      "titulo": "Assistente de Segurança do Trabalho",
+      "empresa": "Polloengenharia",
+      "cidade": "Poços de Caldas",
+      "categoria": "Outros",
+      "nivel": "Nao informado",
+      "resumo": "Na Pollo Engenharia, acreditamos que cada projeto pode transformar a vida das pessoas. Nosso propósito é criar experiências únicas e duradouras, promovendo o conceito de Lifelong Experience por meio de soluções imobiliárias inovadoras, com...",
+      "link": "https://polloengenharia.gupy.io/job/eyJqb2JJZCI6MTE4Mjc0MTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-27",
       "data_primeira": "2026-07-27"
