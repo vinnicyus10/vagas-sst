@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "28/07/2026 16:45",
-  "total": 123,
+  "atualizado_em": "28/07/2026 20:15",
+  "total": 124,
   "vagas": [
     {
       "id": "cb32f69a3175",
@@ -11,6 +11,19 @@
       "nivel": "Nao informado",
       "resumo": "FAÇA PARTE DA EMPRESA QUE TEM O MAIOR E MAIS INTEGRADO PORTFÓLIO LOGÍSTICO DO PAÍS!Olá, somos a JSL, uma empresa brasileira que tem como missão oferecer serviços e soluções em logística. Nós planejamos, executamos e gerenciamos de forma...",
       "link": "https://jsl.gupy.io/job/eyJqb2JJZCI6MTE3NDAwODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-28",
+      "data_primeira": "2026-07-28"
+    },
+    {
+      "id": "ad1c8f33edb6",
+      "titulo": "Técnico em Segurança do Trabalho I - São Joaquim de Bicas MG - Vaga também para PcD",
+      "empresa": "EN",
+      "cidade": "São Joaquim de Bicas",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
+      "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE2MjMxODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-28",
       "data_primeira": "2026-07-28"
@@ -402,7 +415,7 @@
       "resumo": "Buscamos um Técnico de Segurança do Trabalho PL que atuará em atividades relacionadas a segurança.Na Armac, nos esforçamos diariamente para construir relacionamentos duradouros com nossos colaboradores e parceiros, com base na confiança,...",
       "link": "https://armac.gupy.io/job/eyJqb2JJZCI6MTE0MjUzNzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-07-20",
+      "data_coleta": "2026-07-28",
       "data_primeira": "2026-07-09"
     },
     {
@@ -1069,6 +1082,19 @@
       "data_primeira": "2026-06-21"
     },
     {
+      "id": "229588039204",
+      "titulo": "Técnico de Segurança do Trabalho",
+      "empresa": "Acelesuacarreira",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Estamos em busca de um(a) profissional comprometido(a) com a segurança e bem-estar dos colaboradores para atuar em ambiente industrial.Responsabilidades e atribuições➡️Como será o seu dia a dia?Você será responsável por elaborar e...",
+      "link": "https://acelesuacarreira.gupy.io/job/eyJqb2JJZCI6MTExODc2NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-28",
+      "data_primeira": "2026-06-21"
+    },
+    {
       "id": "e44a87f4c68f",
       "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
       "empresa": "Prumo Engenharia",
@@ -1337,19 +1363,6 @@
       "nivel": "Nao informado",
       "resumo": "Em um mundo em constante evolução, a VINCI Energies desempenha um papel fundamental na promoção da transição ambiental por meio da implementação de duas importantes mudanças: Transformação Digital e Transição Energética. Com uma abordagem...",
       "link": "https://vinci-energies.gupy.io/job/eyJqb2JJZCI6MTEyMjU1NTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-06-30",
-      "data_primeira": "2026-06-21"
-    },
-    {
-      "id": "229588039204",
-      "titulo": "Técnico de Segurança do Trabalho",
-      "empresa": "Acelesuacarreira",
-      "cidade": "Contagem",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Estamos em busca de um(a) profissional comprometido(a) com a segurança e bem-estar dos colaboradores para atuar em ambiente industrial.Responsabilidades e atribuições➡️Como será o seu dia a dia?Você será responsável por elaborar e...",
-      "link": "https://acelesuacarreira.gupy.io/job/eyJqb2JJZCI6MTExODc2NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-06-30",
       "data_primeira": "2026-06-21"
