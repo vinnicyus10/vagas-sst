@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "29/07/2026 13:29",
-  "total": 123,
+  "atualizado_em": "29/07/2026 16:26",
+  "total": 124,
   "vagas": [
+    {
+      "id": "c8b60aed464b",
+      "titulo": "Estágio em Segurança do Trabalho - Montes Claros - MG",
+      "empresa": "COM3 Systems",
+      "cidade": "Montes Claros",
+      "categoria": "Outros",
+      "nivel": "Estagio/Trainee",
+      "resumo": "Empresa localizada em Montes Claros/MG, atuante no segmento de automação e desenvolvimento de soluções tecnológicas em todo o Brasil, está em busca de um(a) estagiário(a) em Segurança do Trabalho para apoiar as rotinas de prevenção,...",
+      "link": "https://vaga-ja.com/vagas/c/WNX9RV14VC?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-29",
+      "data_primeira": "2026-07-29"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
