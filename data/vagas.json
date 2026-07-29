@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "29/07/2026 16:26",
-  "total": 124,
+  "atualizado_em": "29/07/2026 20:11",
+  "total": 125,
   "vagas": [
     {
       "id": "c8b60aed464b",
@@ -11,6 +11,19 @@
       "nivel": "Estagio/Trainee",
       "resumo": "Empresa localizada em Montes Claros/MG, atuante no segmento de automação e desenvolvimento de soluções tecnológicas em todo o Brasil, está em busca de um(a) estagiário(a) em Segurança do Trabalho para apoiar as rotinas de prevenção,...",
       "link": "https://vaga-ja.com/vagas/c/WNX9RV14VC?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-29",
+      "data_primeira": "2026-07-29"
+    },
+    {
+      "id": "9eac59657314",
+      "titulo": "Técnico Segurança Trabalho Jr",
+      "empresa": "Cimed",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
+      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-07-29",
       "data_primeira": "2026-07-29"
@@ -214,7 +227,7 @@
       "id": "8c4331f79acd",
       "titulo": "Técnico de Segurança do Trabalho",
       "empresa": "Confidenciaisdeengenharia",
-      "cidade": "Tupaciguara",
+      "cidade": "Coronel Fabriciano",
       "categoria": "Tecnico",
       "nivel": "Nao informado",
       "resumo": "Empresa de Engenharia está com uma oportunidade para função de Técnico de Segurança do Trabalho em obra de Energia.Responsabilidades e atribuiçõesPrincipais Atribuições:Implantar Comissão Interna de Prevenção de Acidentes – CIPA, Mapas de...",
