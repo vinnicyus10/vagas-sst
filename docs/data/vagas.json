@@ -1,7 +1,46 @@
 {
-  "atualizado_em": "31/07/2026 16:49",
-  "total": 126,
+  "atualizado_em": "31/07/2026 20:18",
+  "total": 129,
   "vagas": [
+    {
+      "id": "4314e6a67a4a",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Nova Era",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4OTM0NjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-31",
+      "data_primeira": "2026-07-31"
+    },
+    {
+      "id": "2d37b7e202a1",
+      "titulo": "Engenheiro(a) de Segurança do Trabalho - Região Nordeste e Sul do Brasil",
+      "empresa": "Vinci Energies",
+      "cidade": "Contagem",
+      "categoria": "Engenharia",
+      "nivel": "Nao informado",
+      "resumo": "Acelerando a Transição Energética e a Transformação Digital Na Omexom, você terá a oportunidade de trabalhar com soluções Full EPC para geração, transmissão e subestação de energia. Nossa abordagem colaborativa assegura que cada cliente...",
+      "link": "https://vinci-energies.gupy.io/job/eyJqb2JJZCI6MTE4OTMzMTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-31",
+      "data_primeira": "2026-07-31"
+    },
+    {
+      "id": "f44f17f54bed",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Santa Bárbara",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4ODkxMjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-07-31",
+      "data_primeira": "2026-07-31"
+    },
     {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
@@ -240,7 +279,7 @@
       "id": "90ab843270f1",
       "titulo": "Pessoa Coordenadora de Segurança no Trabalho",
       "empresa": "Time Now",
-      "cidade": "Conceição do Mato Dentro",
+      "cidade": "Araxá",
       "categoria": "Coordenacao/Gestao",
       "nivel": "Coordenacao",
       "resumo": "Na busca contínua por mentes criativas e apaixonadas por inovação, estamos à procura de indivíduos que desafiem os limites, que abracem o novo e tracem caminhos inexplorados rumo a um futuro promissor.Com 30 anos de expertise em...",
