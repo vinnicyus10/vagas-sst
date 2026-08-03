@@ -1,7 +1,33 @@
 {
-  "atualizado_em": "03/08/2026 17:14",
-  "total": 122,
+  "atualizado_em": "03/08/2026 20:25",
+  "total": 124,
   "vagas": [
+    {
+      "id": "6c08af0d914f",
+      "titulo": "Técnico de Segurança do Trabalho",
+      "empresa": "Acelesuacarreira",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Estamos em busca de um(a) profissional comprometido(a) com a segurança e bem-estar dos colaboradores para atuar em ambiente industrial.Responsabilidades e atribuições➡️Como será o seu dia a dia?Você será responsável por elaborar e...",
+      "link": "https://acelesuacarreira.gupy.io/job/eyJqb2JJZCI6MTE5Mjg0NTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-03",
+      "data_primeira": "2026-08-03"
+    },
+    {
+      "id": "dbaec83c319f",
+      "titulo": "Técnico em Segurança do Trabalho II - Ipatinga MG - BANCO DE TALENTOS",
+      "empresa": "EN",
+      "cidade": "Santana do Paraíso",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Acompanhar e orientar as atividades dos porteiros, fiscalizando o controle de entrada de pessoas a fim de preservar a empresa de situações que alterem a ordem e a segurança.Responsabilidades e atribuiçõesAcompanhar, priorizar e orientar as...",
+      "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE4Nzk4NTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-03",
+      "data_primeira": "2026-08-03"
+    },
     {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
