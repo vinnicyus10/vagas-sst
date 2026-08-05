@@ -1,7 +1,72 @@
 {
-  "atualizado_em": "04/08/2026 20:22",
-  "total": 128,
+  "atualizado_em": "05/08/2026 13:27",
+  "total": 131,
   "vagas": [
+    {
+      "id": "55b1318e008b",
+      "titulo": "TÉCNICO SEGURANÇA DO TRABALHO III- PREFERENCIALMENTE PARA MULHERES",
+      "empresa": "Grupoenergisa",
+      "cidade": "Uberlândia",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Somos o Grupo Energisa! Com mais de cem anos de história, a Energisa é o maior grupo privado com controle 100% nacional do setor elétrico brasileiro. Nosso portfólio diversificado abrange 11 distribuidoras, 12 concessões de transmissão,...",
+      "link": "https://grupoenergisa.gupy.io/job/eyJqb2JJZCI6MTE5NTE3MzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-08-05"
+    },
+    {
+      "id": "3ea14b1b5231",
+      "titulo": "Técnico em Segurança do Trabalho I - Belo Horizonte MG - Vaga também para PcD",
+      "empresa": "EN",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
+      "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE5NDEzMjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-08-05"
+    },
+    {
+      "id": "db15f4dcf24a",
+      "titulo": "TECNICO SEGURANÇA DO TRABALHO- UBERABA",
+      "empresa": "MRV&CO",
+      "cidade": "Uberaba",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Falar da MRV&CO (MRV, Urba, Luggo, Sensia e Resia) é dizer muito mais do que os títulos que recebemos durante nossa história de 45 anos. Ser uma das maiores construtoras da América Latina nos orgulha muito. Mas não só isso! Queremos mais e...",
+      "link": "https://vagas-mrveco.gupy.io/job/eyJqb2JJZCI6MTE4ODkxMTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-08-05"
+    },
+    {
+      "id": "9eac59657314",
+      "titulo": "Técnico Segurança Trabalho Jr",
+      "empresa": "Cimed",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
+      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-08-05"
+    },
+    {
+      "id": "debbe8b7ed03",
+      "titulo": "Técnico(a) de Segurança",
+      "empresa": "Vemprotime",
+      "cidade": "Minas Gerais",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
+      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-08-05"
+    },
     {
       "id": "fa14cb74a0b9",
       "titulo": "PESSOA ANALISTA SEGURANCA DO TRABALHO SENIOR",
@@ -12,7 +77,7 @@
       "resumo": "No Grupo EcoRodovias, nosso propósito é claro: Viabilizar caminhos nunca antes imaginados. 🛣️ Esse é o nosso norte e o que nos move todos os dias a transformar a mobilidade no Brasil, com inovação, responsabilidade e visão de futuro. 🚀...",
       "link": "https://eco135.gupy.io/job/eyJqb2JJZCI6MTE5MzU4NTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-04"
     },
     {
@@ -25,7 +90,7 @@
       "resumo": "Buscamos profissional para liderar tecnicamente a gestão de Segurança e Saúde Ocupacional de empresas contratadas em projetos, revitalizações industriais, paradas de manutenção e grandes obras, assegurando elevados padrões de desempenho e...",
       "link": "https://vemsercbmm.gupy.io/job/eyJqb2JJZCI6MTE4ODMzMzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-04"
     },
     {
@@ -38,20 +103,7 @@
       "resumo": "Buscamos profissional para atuar como referência técnica em Segurança e Saúde Ocupacional (SSO) nos projetos de engenharia e expansão industrial, assegurando a incorporação dos princípios de Segurança na Concepção (Safety by Design) desde...",
       "link": "https://vemsercbmm.gupy.io/job/eyJqb2JJZCI6MTE4ODMzNDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
-      "data_primeira": "2026-08-04"
-    },
-    {
-      "id": "9eac59657314",
-      "titulo": "Técnico Segurança Trabalho Jr",
-      "empresa": "Cimed",
-      "cidade": "Pouso Alegre",
-      "categoria": "Tecnico",
-      "nivel": "Junior",
-      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
-      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-04"
     },
     {
@@ -64,20 +116,7 @@
       "resumo": "Você sabia que o nosso time é o que temos de maior valor?Por isso, respeitamos, valorizamos e investimos em cada pessoa que nos ajuda a transformar a logística do país. Responsabilidades e atribuiçõesAssegurar o cumprimento das políticas,...",
       "link": "https://vli-vagas-externas.gupy.io/job/eyJqb2JJZCI6MTExOTMwMjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
-      "data_primeira": "2026-08-04"
-    },
-    {
-      "id": "debbe8b7ed03",
-      "titulo": "Técnico(a) de Segurança",
-      "empresa": "Vemprotime",
-      "cidade": "Minas Gerais",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
-      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-04"
     },
     {
@@ -90,7 +129,7 @@
       "resumo": "Estamos em busca de um(a) profissional comprometido(a) com a segurança e bem-estar dos colaboradores para atuar em ambiente industrial.Responsabilidades e atribuições➡️Como será o seu dia a dia?Você será responsável por elaborar e...",
       "link": "https://acelesuacarreira.gupy.io/job/eyJqb2JJZCI6MTE5Mjg0NTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-03"
     },
     {
@@ -103,7 +142,7 @@
       "resumo": "Acompanhar e orientar as atividades dos porteiros, fiscalizando o controle de entrada de pessoas a fim de preservar a empresa de situações que alterem a ordem e a segurança.Responsabilidades e atribuiçõesAcompanhar, priorizar e orientar as...",
       "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE4Nzk4NTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-08-03"
     },
     {
@@ -116,7 +155,20 @@
       "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
       "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4OTM0NjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-07-31"
+    },
+    {
+      "id": "f44f17f54bed",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Santa Bárbara",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4ODkxMjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-31"
     },
     {
@@ -133,19 +185,6 @@
       "data_primeira": "2026-07-31"
     },
     {
-      "id": "f44f17f54bed",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
-      "empresa": "Prumo Engenharia",
-      "cidade": "Santa Bárbara",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
-      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4ODkxMjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
-      "data_primeira": "2026-07-31"
-    },
-    {
       "id": "5aaf755d6e94",
       "titulo": "Técnico de Segurança do Trabalho",
       "empresa": "Vemprabritvicbrasil",
@@ -155,7 +194,7 @@
       "resumo": "Somos a Britvic Brasil, uma empresa do Grupo Carlsberg. Chegamos ao Brasil em 2015, após a aquisição das marcas Maguary e Dafruta, ambas já consolidadas no país, com o objetivo de expandir os negócios e conquistar o consumidor brasileiro...",
       "link": "https://vemprabritvicbrasil.gupy.io/job/eyJqb2JJZCI6MTE4NDUwODEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-30"
     },
     {
@@ -168,7 +207,7 @@
       "resumo": "Venha fazer parte de um time Pulsante, Ousado e Incansável! Aqui na Allonda acreditamos no poder da transformação e somos mais de 2.000 integrantes espalhados pelo Brasil, transformando e impactando a vida das pessoas, a sociedade e o...",
       "link": "https://allonda.gupy.io/job/eyJqb2JJZCI6MTE2MTYyNDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-30"
     },
     {
@@ -181,7 +220,7 @@
       "resumo": "Descrição da vagaSerá responsável pelas atividades relacionadas à segurança de operações, pela implementação da política de saúde e segurança no trabalho e demais atividades da área.Responsabilidades e atribuiçõesResponsabilidades e...",
       "link": "https://vemprag2l.gupy.io/job/eyJqb2JJZCI6MTE3NDIzOTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-30"
     },
     {
@@ -194,7 +233,7 @@
       "resumo": "Falar da MRV&CO (MRV, Urba, Luggo, Sensia e Resia) é dizer muito mais do que os títulos que recebemos durante nossa história de 45 anos. Ser uma das maiores construtoras da América Latina nos orgulha muito. Mas não só isso! Queremos mais e...",
       "link": "https://oportunidade-sigilosa.gupy.io/job/eyJqb2JJZCI6MTE4Nzc3ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-30"
     },
     {
@@ -220,7 +259,7 @@
       "resumo": "FAÇA PARTE DA EMPRESA QUE TEM O MAIOR E MAIS INTEGRADO PORTFÓLIO LOGÍSTICO DO PAÍS!Olá, somos a JSL, uma empresa brasileira que tem como missão oferecer serviços e soluções em logística. Nós planejamos, executamos e gerenciamos de forma...",
       "link": "https://jsl.gupy.io/job/eyJqb2JJZCI6MTE3NDAwODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-28"
     },
     {
@@ -233,7 +272,7 @@
       "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
       "link": "https://en.gupy.io/job/eyJqb2JJZCI6MTE2MjMxODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-28"
     },
     {
@@ -246,7 +285,7 @@
       "resumo": "A CIPALAM é uma empresa de Laminação de Perfis longos localizada na região do Vale do Aço/MG, que fabrica barras e perfis com aço carbono com os mais altos padrões de qualidade. Seus produtos podem ser empregados em várias modalidades,...",
       "link": "https://cipalam.gupy.io/job/eyJqb2JJZCI6MTE4MjM3MjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-27"
     },
     {
@@ -259,7 +298,7 @@
       "resumo": "Na Pollo Engenharia, acreditamos que cada projeto pode transformar a vida das pessoas. Nosso propósito é criar experiências únicas e duradouras, promovendo o conceito de Lifelong Experience por meio de soluções imobiliárias inovadoras, com...",
       "link": "https://polloengenharia.gupy.io/job/eyJqb2JJZCI6MTE4Mjc0MTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-27"
     },
     {
@@ -272,7 +311,7 @@
       "resumo": "Na SA Gôndolas de Aço, somos referência nacional em soluções para armazenamento e exposição no varejo.Com foco em qualidade, inovação e excelência no atendimento, produzimos estruturas metálicas que transformam o ambiente de vendas dos...",
       "link": "https://sagrupo.gupy.io/job/eyJqb2JJZCI6MTE3MzEwNzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-27"
     },
     {
@@ -298,7 +337,7 @@
       "resumo": "Estamos em busca de um Técnico de Segurança do Trabalho para fortalecer nossa cultura de segurança e contribuir para a construção de um ambiente cada vez mais seguro, estruturado e orientado à prevenção.Este profissional será responsável...",
       "link": "https://exportadoraguaxupe.gupy.io/job/eyJqb2JJZCI6MTE2NDAyMzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-22"
     },
     {
@@ -311,7 +350,7 @@
       "resumo": "ALS é líder mundial no fornecimento de serviços laboratoriais e analíticos técnicos.As pessoas são o nosso diferencial e os diversos talentos que eles trazem para nossa força de trabalho global estão diretamente relacionados ao nosso...",
       "link": "https://alslifesciences.gupy.io/job/eyJqb2JJZCI6MTA5MDQ5ODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-22"
     },
     {
@@ -350,7 +389,7 @@
       "resumo": "Será responsável por desenvolver, participar e controlar todas as iniciativas da área.Responsabilidades e atribuiçõesLiderar a implementação e manutenção de programas de saúde e segurança ocupacional.Desenvolver e revisar políticas,...",
       "link": "https://oportunidade_confidencial.gupy.io/job/eyJqb2JJZCI6MTE3MTY0NzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-21"
     },
     {
@@ -363,7 +402,7 @@
       "resumo": "Na busca contínua por mentes criativas e apaixonadas por inovação, estamos à procura de indivíduos que desafiem os limites, que abracem o novo e tracem caminhos inexplorados rumo a um futuro promissor.Com 30 anos de expertise em...",
       "link": "https://time-now.gupy.io/job/eyJqb2JJZCI6MTE1ODA1ODEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-21"
     },
     {
@@ -376,7 +415,7 @@
       "resumo": "Oportunidade para atuar como TÉCNICO EM SEGURANÇA DO TRABALHO em empresa atacadista de grande porte, com presença nacional e cultura familiar. Com cerca de 4.200 colaboradores, valoriza o compromisso, a proximidade e as pessoas, mantendo...",
       "link": "https://tambasa.gupy.io/job/eyJqb2JJZCI6MTE2NTc2MjYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-20"
     },
     {
@@ -389,7 +428,7 @@
       "resumo": "Empresa de Engenharia está com uma oportunidade para função de Técnico de Segurança do Trabalho em obra de Energia.Responsabilidades e atribuiçõesPrincipais Atribuições:Implantar Comissão Interna de Prevenção de Acidentes – CIPA, Mapas de...",
       "link": "https://vagasconfidenciaisdeengenharia.gupy.io/job/eyJqb2JJZCI6MTE3MTM2MzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-20"
     },
     {
@@ -428,7 +467,7 @@
       "resumo": "Falar da MRV&CO (MRV, Urba, Luggo, Sensia e Resia) é dizer muito mais do que os títulos que recebemos durante nossa história de 45 anos. Ser uma das maiores construtoras da América Latina nos orgulha muito. Mas não só isso! Queremos mais e...",
       "link": "https://vagas-mrveco.gupy.io/job/eyJqb2JJZCI6MTE2NjIyMzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-16"
     },
     {
@@ -467,7 +506,7 @@
       "resumo": "Você tem paixão pelo setor da construção civil e busca desenvolver sua carreira em uma empresa consolidada e em constante expansão? A LOG está com uma oportunidade para Técnico de Segurança do Trabalho e quer contar com o seu talento para...",
       "link": "https://logcp.gupy.io/job/eyJqb2JJZCI6MTE2NDU4MzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-15"
     },
     {
@@ -506,7 +545,7 @@
       "resumo": "Acelerando a Transição Energética e a Transformação Digital Em um mundo em constante evolução, a VINCI Energies desempenha um papel fundamental na promoção da transição ambiental por meio da implementação de duas importantes mudanças:...",
       "link": "https://programa-estagio-ve.gupy.io/job/eyJqb2JJZCI6MTE2Mzc0ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-14"
     },
     {
@@ -545,7 +584,7 @@
       "resumo": "Na Cimento Nacional, temos o propósito de sustentar o desenvolvimento da sociedade. Nosso cimento é símbolo de solidez e compromisso com o futuro. Aqui, além de se desenvolver profissionalmente, você terá a chance de contribuir para a...",
       "link": "https://cimentonacional.gupy.io/job/eyJqb2JJZCI6MTE2MjYxNTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-13"
     },
     {
@@ -571,7 +610,7 @@
       "resumo": "Realizar as atividades relacionadas à segurança do trabalho, trabalhando de forma preventiva para eliminar ou reduzir os riscos de ocorrências de acidentes/doenças do trabalho, observando o cumprimento de toda a legislação...",
       "link": "https://carreirasveo.gupy.io/job/eyJqb2JJZCI6MTE2MTM5ODMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-10"
     },
     {
@@ -584,7 +623,7 @@
       "resumo": "Buscamos talentos para integrar o time SSMA na Diase Construtora!Estamos em busca de novos talentos para integrarem nosso time! Se você é apaixonado por construir, inovar e busca um ambiente de trabalho desafiador e recompensador, temos...",
       "link": "https://diase.gupy.io/job/eyJqb2JJZCI6MTE2MTU4NDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-10"
     },
     {
@@ -597,7 +636,7 @@
       "resumo": "Proporcionamos um espaço de aprendizagem. Aqui, você terá a oportunidade de desenvolver projetos em sua área de atuação com impactos tangíveis em nossa empresa. Investimos em seu aprendizado, por meio de uma trilha de desenvolvimento que...",
       "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE2MTA0NDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-09"
     },
     {
@@ -623,7 +662,7 @@
       "resumo": "Aqui, são as pessoas que estão no centro da nossa estratégia. Com profissionais talentosos, responsáveis e comprometidos criamos produtos e soluções que impactam cada canto do país, geram resultados e proporcionam uma vida melhor.​Venha...",
       "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE2MDAxODIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-08"
     },
     {
@@ -662,7 +701,7 @@
       "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
       "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE1ODA5NjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-06"
     },
     {
@@ -753,7 +792,7 @@
       "resumo": "Aqui, são as pessoas que estão no centro da nossa estratégia. Com profissionais talentosos, responsáveis e comprometidos criamos produtos e soluções que impactam cada canto do país, geram resultados e proporcionam uma vida melhor.​Venha...",
       "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE1NzQzMzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-02"
     },
     {
@@ -818,7 +857,7 @@
       "resumo": "Somos a VIC Engenharia, uma empresa mineira que atua no mercado de engenharia civil sendo seu foco no programa governamental Minha Casa, Minha Vida. Valorizamos e fortalecemos as boas relações e a felicidade no ambiente de trabalho e nosso...",
       "link": "https://vicengenharia.gupy.io/job/eyJqb2JJZCI6MTE1NzA5NjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-07-01"
     },
     {
@@ -848,19 +887,6 @@
       "data_primeira": "2026-07-01"
     },
     {
-      "id": "f3b1213e644f",
-      "titulo": "Técnico(a) de Segurança do Trabalho",
-      "empresa": "Tsaengenharia",
-      "cidade": "Ouro Preto",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
-      "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTE1NjA3NjIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
-      "data_primeira": "2026-06-30"
-    },
-    {
       "id": "27bf9e6b8ee9",
       "titulo": "Técnico de Segurança do Trabalho I- Belo Horizonte",
       "empresa": "MRV&CO",
@@ -869,6 +895,19 @@
       "nivel": "Nao informado",
       "resumo": "Falar da MRV&CO (MRV, Urba, Luggo, Sensia e Resia) é dizer muito mais do que os títulos que recebemos durante nossa história de 46 anos. Ser uma das maiores construtoras da América Latina nos orgulha muito. Mas não só isso! Queremos mais e...",
       "link": "https://vagas-mrveco.gupy.io/job/eyJqb2JJZCI6MTEwNTMxMjksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-05",
+      "data_primeira": "2026-06-30"
+    },
+    {
+      "id": "f3b1213e644f",
+      "titulo": "Técnico(a) de Segurança do Trabalho",
+      "empresa": "Tsaengenharia",
+      "cidade": "Ouro Preto",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
+      "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTE1NjA3NjIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-04",
       "data_primeira": "2026-06-30"
@@ -948,7 +987,7 @@
       "resumo": "Na TRANSPES, valorizamos e respeitamos todas as pessoas! Buscamos profissionais comprometidos com a igualdade e oferecemos um ambiente de trabalho colaborativo, dinâmico e com excelentes chances de crescimento e desenvolvimento...",
       "link": "https://transpes.gupy.io/job/eyJqb2JJZCI6MTE1Mzk4OTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-26"
     },
     {
@@ -1013,7 +1052,7 @@
       "resumo": "Buscamos pessoas que sejam inovadoras, que possuam foco nos resultados, preocupação com a segurança e que sejam compromissadas com as pessoas. Acreditamos que nossa força vem de um trabalho colaborativo. Sempre buscamos inovar para...",
       "link": "https://confidentialopportunity.gupy.io/job/eyJqb2JJZCI6MTE1MDk4OTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-23"
     },
     {
@@ -1026,7 +1065,7 @@
       "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
       "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE1MzI2ODYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-23"
     },
     {
@@ -1065,7 +1104,7 @@
       "resumo": "Estamos em busca de um(a) Técnico(a) de Segurança do Trabalho com perfil técnico, analítico e organizado para atuar nas rotinas de prevenção, gestão de riscos, indicadores e conformidade legal. A pessoa será responsável por apoiar...",
       "link": "https://vagasfarmax.gupy.io/job/eyJqb2JJZCI6MTE0OTU0NTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-21"
     },
     {
@@ -1078,7 +1117,7 @@
       "resumo": "Trabalhamos incansavelmente para conectar pessoas. Portanto, trabalhar na VERO é a oportunidade ideal para você que gosta de desafios. Mais do que isso, é a oportunidade para agregar conhecimento e se desenvolver em uma empresa que olha...",
       "link": "https://vero.gupy.io/job/eyJqb2JJZCI6MTE0ODE5NTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-21"
     },
     {
@@ -1091,7 +1130,7 @@
       "resumo": "Empresa de grande porte contrata em Belo Horizonte.Responsabilidades e atribuiçõesFiscalizar e acompanhar o real cumprimento dos empregados nas normas de segurança, saúde e meio ambiente;Realizar programas de segurança e campanhas...",
       "link": "https://confidentialopportunity.gupy.io/job/eyJqb2JJZCI6MTEzODE0NzAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-21"
     },
     {
@@ -1104,7 +1143,7 @@
       "resumo": "Engenheiro/Técnico de Testes de Segurança Passiva - Proteção de Pedestres) para trabalhar no desenvolvimento de segurança de pedestres de veículos. Equipe de Testes - Segurança de atividades de impacto de segurança para o desenvolvimento...",
       "link": "https://idiada&75218&inactive.gupy.io/job/eyJqb2JJZCI6MzA5NzQ5Miwic291cmNlIjoiZ3VweV9wb3J0YWwifQ==?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-21"
     },
     {
@@ -1117,7 +1156,7 @@
       "resumo": "Realizar atividades do sistema de Segurança, Saúde e Meio Ambiente, fiscalizando o cumprimento das normas estabelecidas e exigências legais, atuando na garantia da preservação da integridade física, conforto e bem-estar dos funcionários,...",
       "link": "https://en.gupy.io/job/eyJqb2JJZCI6OTY5OTA3NCwic291cmNlIjoiZ3VweV9wb3J0YWwifQ==?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
-      "data_coleta": "2026-08-04",
+      "data_coleta": "2026-08-05",
       "data_primeira": "2026-06-21"
     },
     {
