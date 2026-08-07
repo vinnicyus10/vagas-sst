@@ -1,20 +1,7 @@
 {
-  "atualizado_em": "07/08/2026 00:39",
+  "atualizado_em": "07/08/2026 12:33",
   "total": 129,
   "vagas": [
-    {
-      "id": "9eac59657314",
-      "titulo": "Técnico Segurança Trabalho Jr",
-      "empresa": "Cimed",
-      "cidade": "Pouso Alegre",
-      "categoria": "Tecnico",
-      "nivel": "Junior",
-      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
-      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-07",
-      "data_primeira": "2026-08-07"
-    },
     {
       "id": "bba700677456",
       "titulo": "Estagiário(a) Técnico de Segurança",
@@ -24,6 +11,19 @@
       "nivel": "Estagio/Trainee",
       "resumo": "Proporcionamos um espaço de aprendizagem. Aqui, você terá a oportunidade de desenvolver projetos em sua área de atuação com impactos tangíveis em nossa empresa. Investimos em seu aprendizado, por meio de uma trilha de desenvolvimento que...",
       "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE5NzgxMTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-07",
+      "data_primeira": "2026-08-07"
+    },
+    {
+      "id": "9eac59657314",
+      "titulo": "Técnico Segurança Trabalho Jr",
+      "empresa": "Cimed",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
+      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-07",
       "data_primeira": "2026-08-07"
