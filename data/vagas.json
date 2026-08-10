@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "10/08/2026 16:04",
-  "total": 123,
+  "atualizado_em": "10/08/2026 19:53",
+  "total": 124,
   "vagas": [
+    {
+      "id": "28bd0ddba57e",
+      "titulo": "Técnico(a) de Segurança do Trabalho",
+      "empresa": "Fundep",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Quem somos:Há mais de 50 anos, a Fundep é a fundação de apoio da UFMG, responsável pela gestão de projetos de pesquisa, ensino, extensão e desenvolvimento institucional. Autorizada também a apoiar outras instituições de ciência e...",
+      "link": "https://fundep.gupy.io/job/eyJqb2JJZCI6MTIwMjU5NDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-10",
+      "data_primeira": "2026-08-10"
+    },
     {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
