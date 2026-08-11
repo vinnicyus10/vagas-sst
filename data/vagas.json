@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "11/08/2026 16:04",
-  "total": 126,
+  "atualizado_em": "11/08/2026 19:59",
+  "total": 127,
   "vagas": [
     {
       "id": "37c9382080ad",
@@ -24,6 +24,19 @@
       "nivel": "Nao informado",
       "resumo": "Se o olho brilha, vem ser BernoulliSomos feitos de pessoas que acreditam no poder transformador da educação. Gente criativa, determinada e que gosta de aprender. Profissionais que enxergam os desafios como oportunidades para inovar, gerar...",
       "link": "https://bernoullieducacao.gupy.io/job/eyJqb2JJZCI6MTIwMjY2NjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-11",
+      "data_primeira": "2026-08-11"
+    },
+    {
+      "id": "9fa59e9474df",
+      "titulo": "Técnico Segurança do Trabalho (Araxá)",
+      "empresa": "Vinci Energies",
+      "cidade": "Araxá",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Acelerando a Transição Energética e a Transformação Digital A expertise da Actemium abrange todo o ciclo de vida industrial, desde o projeto e engenharia até a execução e manutenção. Nossa experiência e trabalho em rede nos permitem...",
+      "link": "https://vinci-energies.gupy.io/job/eyJqb2JJZCI6MTIwNDI3NTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-11",
       "data_primeira": "2026-08-11"
