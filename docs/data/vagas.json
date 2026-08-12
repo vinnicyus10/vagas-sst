@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "12/08/2026 12:35",
-  "total": 126,
+  "atualizado_em": "12/08/2026 16:02",
+  "total": 129,
   "vagas": [
     {
       "id": "ea2f1cd25985",
@@ -42,6 +42,32 @@
       "data_primeira": "2026-08-12"
     },
     {
+      "id": "de23a302c02d",
+      "titulo": "Coordenador(a) de Segurança do Trabalho",
+      "empresa": "Axiaenergia",
+      "cidade": "Araporã",
+      "categoria": "Coordenacao/Gestao",
+      "nivel": "Coordenacao",
+      "resumo": "SOBRE A AXIA ENERGIA A Eletrobras agora é AXIA Energia e chega como a maior empresa de energia renovável do Hemisfério Sul, responsável por 17% da capacidade de geração nacional e 37% das linhas de transmissão do Sistema Interligado...",
+      "link": "https://axiaenergia.gupy.io/job/eyJqb2JJZCI6MTE2MDEzOTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-12",
+      "data_primeira": "2026-08-12"
+    },
+    {
+      "id": "7a9ccf5067ab",
+      "titulo": "Técnico em Segurança do Trabalho",
+      "empresa": "Mills",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Na Mills, acreditamos que construir vai muito além do nosso modelo de negócio. É sobre criar conexões, gerar oportunidades e transformar histórias com impacto real. Com mais de 72 anos de história, somos referência nacional em locação de...",
+      "link": "https://mills.gupy.io/job/eyJqb2JJZCI6MTIwNTU3NjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-12",
+      "data_primeira": "2026-08-12"
+    },
+    {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
       "empresa": "Cimed",
@@ -50,6 +76,19 @@
       "nivel": "Junior",
       "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
       "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-12",
+      "data_primeira": "2026-08-12"
+    },
+    {
+      "id": "4e94d30ce163",
+      "titulo": "Técnico Segurança do Trabalho - São Sebastião do Rio Verde/MG",
+      "empresa": "Mantiqueirabrasil",
+      "cidade": "Itanhandu",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Executar as atividades ligadas à segurança do trabalho, visando assegurar condições que eliminem ou reduzam ao mínimo os riscos de ocorrência de acidentes de trabalho, observando o cumprimento de toda a legislação...",
+      "link": "https://mantiqueirabrasil.gupy.io/job/eyJqb2JJZCI6MTE1NDQ1NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-12",
       "data_primeira": "2026-08-12"
