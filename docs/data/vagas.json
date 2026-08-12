@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "12/08/2026 16:02",
-  "total": 129,
+  "atualizado_em": "12/08/2026 19:59",
+  "total": 130,
   "vagas": [
     {
       "id": "ea2f1cd25985",
@@ -68,19 +68,6 @@
       "data_primeira": "2026-08-12"
     },
     {
-      "id": "9eac59657314",
-      "titulo": "Técnico Segurança Trabalho Jr",
-      "empresa": "Cimed",
-      "cidade": "Pouso Alegre",
-      "categoria": "Tecnico",
-      "nivel": "Junior",
-      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
-      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-12",
-      "data_primeira": "2026-08-12"
-    },
-    {
       "id": "4e94d30ce163",
       "titulo": "Técnico Segurança do Trabalho - São Sebastião do Rio Verde/MG",
       "empresa": "Mantiqueirabrasil",
@@ -89,6 +76,32 @@
       "nivel": "Nao informado",
       "resumo": "Executar as atividades ligadas à segurança do trabalho, visando assegurar condições que eliminem ou reduzam ao mínimo os riscos de ocorrência de acidentes de trabalho, observando o cumprimento de toda a legislação...",
       "link": "https://mantiqueirabrasil.gupy.io/job/eyJqb2JJZCI6MTE1NDQ1NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-12",
+      "data_primeira": "2026-08-12"
+    },
+    {
+      "id": "d04839f1bc2b",
+      "titulo": "Técnico de Segurança do Trabalho - São Sebastião do Rio Verde",
+      "empresa": "Mantiqueirabrasil",
+      "cidade": "São Sebastião do Rio Verde",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Quer ser um Mantiqueirense?Na Mantiqueira, acreditamos que alimentar bem as pessoas é alimentar boas relações. Esse é o nosso propósito e a razão de tudo o que fazemos.Mais do que produzir alimentos de qualidade, construímos conexões,...",
+      "link": "https://mantiqueirabrasil.gupy.io/job/eyJqb2JJZCI6MTIwNTgyMjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-12",
+      "data_primeira": "2026-08-12"
+    },
+    {
+      "id": "9eac59657314",
+      "titulo": "Técnico Segurança Trabalho Jr",
+      "empresa": "Cimed",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Quer fazer parte de umas das maiores indústrias farmacêuticas do Brasil, ser desafiado, aprender e vivenciar uma rotina com times cheios de vontade de fazer acontecer? Com a oportunidade de TÉCNICO SEGURANÇA TRABALHO JR vamos proporcionar...",
+      "link": "https://cimed.gupy.io/job/eyJqb2JJZCI6MTE4NjE3NDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-12",
       "data_primeira": "2026-08-12"
