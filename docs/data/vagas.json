@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "13/08/2026 16:03",
-  "total": 129,
+  "atualizado_em": "13/08/2026 19:54",
+  "total": 130,
   "vagas": [
     {
       "id": "1d57a5eea718",
@@ -24,6 +24,19 @@
       "nivel": "Nao informado",
       "resumo": "A BTS é uma empresa especializada em desenvolvimento de projetos imobiliários, com foco em atender as demandas de nossos clientes em todos os detalhes. Encontramos o terreno ideal, desenvolvemos o projeto e executamos a construção do...",
       "link": "https://bts.gupy.io/job/eyJqb2JJZCI6MTIwNzIzMTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-13",
+      "data_primeira": "2026-08-13"
+    },
+    {
+      "id": "ecbc6aa60c00",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Barroso",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIwNzM4MzEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-13",
       "data_primeira": "2026-08-13"
