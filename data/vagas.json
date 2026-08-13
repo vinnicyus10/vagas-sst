@@ -1,7 +1,33 @@
 {
-  "atualizado_em": "13/08/2026 12:37",
-  "total": 127,
+  "atualizado_em": "13/08/2026 16:03",
+  "total": 129,
   "vagas": [
+    {
+      "id": "1d57a5eea718",
+      "titulo": "Engenheiro(a) de Segurança do Trabalho de Obra - Pouso Alegre/MG",
+      "empresa": "BTS",
+      "cidade": "Pouso Alegre",
+      "categoria": "Engenharia",
+      "nivel": "Nao informado",
+      "resumo": "A BTS é uma empresa especializada em desenvolvimento de projetos imobiliários, com foco em atender as demandas de nossos clientes em todos os detalhes. Encontramos o terreno ideal, desenvolvemos o projeto e executamos a construção do...",
+      "link": "https://bts.gupy.io/job/eyJqb2JJZCI6MTIwNzI0MzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-13",
+      "data_primeira": "2026-08-13"
+    },
+    {
+      "id": "a8d3db44458f",
+      "titulo": "Técnico de Segurança do Trabalho - Pouso Alegre/MG",
+      "empresa": "BTS",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "A BTS é uma empresa especializada em desenvolvimento de projetos imobiliários, com foco em atender as demandas de nossos clientes em todos os detalhes. Encontramos o terreno ideal, desenvolvemos o projeto e executamos a construção do...",
+      "link": "https://bts.gupy.io/job/eyJqb2JJZCI6MTIwNzIzMTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-13",
+      "data_primeira": "2026-08-13"
+    },
     {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
