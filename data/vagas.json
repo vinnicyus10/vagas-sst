@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "17/08/2026 12:15",
-  "total": 125,
+  "atualizado_em": "17/08/2026 15:31",
+  "total": 126,
   "vagas": [
+    {
+      "id": "8eb722359c62",
+      "titulo": "Técnico Segurança do Trabalho - Grupo Valence",
+      "empresa": "Grupovalence",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Olá!Ficamos felizes em saber que você deseja fazer parte do Grupo Valence. Para nós a integridade, seriedade e simplicidade é o mais importante em nossos negócios.Gostamos de pessoas que tenham um diferencial no atendimento, tenha sempre...",
+      "link": "https://grupovalence.gupy.io/job/eyJqb2JJZCI6MTIxMzk2MzIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-17",
+      "data_primeira": "2026-08-17"
+    },
     {
       "id": "9eac59657314",
       "titulo": "Técnico Segurança Trabalho Jr",
