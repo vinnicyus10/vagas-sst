@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "19/08/2026 12:17",
-  "total": 131,
+  "atualizado_em": "19/08/2026 15:37",
+  "total": 132,
   "vagas": [
     {
       "id": "2ed1828d3391",
@@ -11,6 +11,19 @@
       "nivel": "Estagio/Trainee",
       "resumo": "A Tupy é uma multinacional brasileira com mais de 80 anos de história, presente em mais de 40 países e reconhecida pela tecnologia de ponta aplicada à produção de componentes estruturais em ferro fundido para setores como transporte,...",
       "link": "https://tupy.gupy.io/job/eyJqb2JJZCI6MTIxNzg4NTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-19",
+      "data_primeira": "2026-08-19"
+    },
+    {
+      "id": "8aba5e1a50f5",
+      "titulo": "Assistente de Segurança do Trabalho",
+      "empresa": "Selpe",
+      "cidade": "Nova Lima",
+      "categoria": "Outros",
+      "nivel": "Nao informado",
+      "resumo": "Estamos em busca de um (a) Assistente de Segurança do Trabalho para integrar o time, apoiando as rotinas administrativas e operacionais da área de Saúde e Segurança do Trabalho.A posição terá atuação no controle de documentos, EPIs,...",
+      "link": "https://selpe.gupy.io/job/eyJqb2JJZCI6MTIxNDgzNTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-19",
       "data_primeira": "2026-08-19"
