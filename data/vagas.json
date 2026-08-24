@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "24/08/2026 15:46",
-  "total": 124,
+  "atualizado_em": "24/08/2026 19:27",
+  "total": 125,
   "vagas": [
+    {
+      "id": "da6aa44eab71",
+      "titulo": "Estágio - Técnico em Segurança do Trabalho",
+      "empresa": "Pradolux",
+      "cidade": "Poços de Caldas",
+      "categoria": "Tecnico",
+      "nivel": "Estagio/Trainee",
+      "resumo": "A Unilumen é referência em inovação e qualidade no mercado de autopeças, reunindo as marcas Pradolux, Luxparts, Technomoldes, Innovalight e Lightlabs. Desenvolvemos soluções em iluminação e sinalização para veículos pesados e comerciais,...",
+      "link": "https://pradolux.gupy.io/job/eyJqb2JJZCI6MTIxOTc0NDksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-24",
+      "data_primeira": "2026-08-24"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
