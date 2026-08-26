@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "26/08/2026 16:23",
-  "total": 129,
+  "atualizado_em": "26/08/2026 21:38",
+  "total": 131,
   "vagas": [
     {
       "id": "d57ce9d361ce",
@@ -16,19 +16,6 @@
       "data_primeira": "2026-08-26"
     },
     {
-      "id": "debbe8b7ed03",
-      "titulo": "Técnico(a) de Segurança",
-      "empresa": "Vemprotime",
-      "cidade": "Minas Gerais",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
-      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-08-26",
-      "data_primeira": "2026-08-26"
-    },
-    {
       "id": "d8978349e38d",
       "titulo": "Assistente Administrativo - SESMT | Vaga exclusiva para pessoas com deficiência e pessoas reabilitadas do INSS",
       "empresa": "Conoscosenacmg",
@@ -37,6 +24,45 @@
       "nivel": "Nao informado",
       "resumo": "🤔 Já imaginou transformar milhares de vidas por meio do seu trabalho? Aqui no Senac em Minas é assim! Todos os dias, seja na sala de aula ou no administrativo, a nossa missão é transformar vidas por meio da educação profissional de...",
       "link": "https://trabalheconoscosenacmg.gupy.io/job/eyJqb2JJZCI6MTIyODc2NjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-26",
+      "data_primeira": "2026-08-26"
+    },
+    {
+      "id": "b04b187a9708",
+      "titulo": "Técnico em Segurança do Trabalho - Contagem - MG",
+      "empresa": "Topico",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Procuramos o ou a melhor TÉCNICO DE SEGURANÇA DO TRABALHO e esse profissional pode ser você! Venha fazer parte deste time líder de mercado, valorizamos o seu talento e queremos crescer junto com você! Responsabilidades e...",
+      "link": "https://topico.gupy.io/job/eyJqb2JJZCI6MTIyODEzNTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-26",
+      "data_primeira": "2026-08-26"
+    },
+    {
+      "id": "c86f10101a62",
+      "titulo": "SUPERVISOR DE SEGURANÇA DO TRABALHO - (Belo Horizonte/MG)",
+      "empresa": "Logcp",
+      "cidade": "Belo Horizonte",
+      "categoria": "Outros",
+      "nivel": "Nao informado",
+      "resumo": "Você tem paixão pelo setor da construção civil e busca desenvolver sua carreira em uma empresa consolidada e em constante expansão? A LOG está com uma oportunidade para Supervisor de Segurança do Trabalho e quer contar com o seu talento...",
+      "link": "https://logcp.gupy.io/job/eyJqb2JJZCI6MTIxNjQ5NzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-26",
+      "data_primeira": "2026-08-26"
+    },
+    {
+      "id": "debbe8b7ed03",
+      "titulo": "Técnico(a) de Segurança",
+      "empresa": "Vemprotime",
+      "cidade": "Minas Gerais",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
+      "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-08-26",
       "data_primeira": "2026-08-26"
