@@ -1,7 +1,46 @@
 {
-  "atualizado_em": "28/08/2026 02:25",
-  "total": 130,
+  "atualizado_em": "28/08/2026 21:32",
+  "total": 133,
   "vagas": [
+    {
+      "id": "9b5444e0e0f9",
+      "titulo": "Técnico(a) de Segurança do Trabalho",
+      "empresa": "Tsaengenharia",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
+      "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTIyODQ3MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-28",
+      "data_primeira": "2026-08-28"
+    },
+    {
+      "id": "5e356466ca1f",
+      "titulo": "321948 - GERENTE SEGURANCA TRABALHO",
+      "empresa": "Vli Externas",
+      "cidade": "Belo Horizonte",
+      "categoria": "Coordenacao/Gestao",
+      "nivel": "Coordenacao",
+      "resumo": "Buscamos um(a) profissional com forte visão estratégica e sólida experiência em gestão de riscos para liderar a agenda corporativa de Segurança do Trabalho, promovendo ambientes mais seguros, resilientes e alinhados às melhores práticas de...",
+      "link": "https://vli-vagas-externas.gupy.io/job/eyJqb2JJZCI6MTIyODgxNjYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-28",
+      "data_primeira": "2026-08-28"
+    },
+    {
+      "id": "4235aa1138d2",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Governador Valadares",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um Técnico em Segurança do Trabalho comprometido, proativo e organizado, para atuar junto às equipes de campo e liderança, promovendo a prevenção de acidentes e o controle de riscos. É desejável conhecimento em NRs, PROs e RACs da...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIzMTk3ODQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-08-28",
+      "data_primeira": "2026-08-28"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
