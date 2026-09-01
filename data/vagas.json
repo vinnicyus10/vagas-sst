@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "01/09/2026 18:19",
-  "total": 123,
+  "atualizado_em": "01/09/2026 21:35",
+  "total": 124,
   "vagas": [
+    {
+      "id": "b6129dd2ac07",
+      "titulo": "TECNICO DE SEGURANCA DO TRABALHO PL",
+      "empresa": "JSL",
+      "cidade": "Contagem",
+      "categoria": "Tecnico",
+      "nivel": "Pleno",
+      "resumo": "FAÇA PARTE DA EMPRESA QUE TEM O MAIOR E MAIS INTEGRADO PORTFÓLIO LOGÍSTICO DO PAÍS!Olá, somos a JSL, uma empresa brasileira que tem como missão oferecer serviços e soluções em logística. Nós planejamos, executamos e gerenciamos de forma...",
+      "link": "https://jsl.gupy.io/job/eyJqb2JJZCI6MTIzMjkwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-01",
+      "data_primeira": "2026-09-01"
+    },
     {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
