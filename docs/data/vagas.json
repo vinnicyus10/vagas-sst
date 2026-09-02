@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "02/09/2026 18:31",
-  "total": 123,
+  "atualizado_em": "02/09/2026 21:35",
+  "total": 125,
   "vagas": [
     {
       "id": "3a273b296ac5",
@@ -29,6 +29,19 @@
       "data_primeira": "2026-09-02"
     },
     {
+      "id": "0c0eaed998a1",
+      "titulo": "Engenheiro de Segurança do Trabalho | Belo Horizonte/MG",
+      "empresa": "Nova381",
+      "cidade": "Belo Horizonte",
+      "categoria": "Engenharia",
+      "nivel": "Nao informado",
+      "resumo": "A Nova 381 tem como compromisso transformar a experiência de quem circula pela BR-381, oferecendo mais segurança, fluidez e qualidade na infraestrutura viária. Com a expectativa de gerar cerca de 80 mil empregos diretos e indiretos em 30...",
+      "link": "https://nova381.gupy.io/job/eyJqb2JJZCI6MTI0MTMxMDMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-02",
+      "data_primeira": "2026-09-02"
+    },
+    {
       "id": "debbe8b7ed03",
       "titulo": "Técnico(a) de Segurança",
       "empresa": "Vemprotime",
@@ -37,6 +50,19 @@
       "nivel": "Nao informado",
       "resumo": "#SomosMaisNaTIM Fazer parte da TIM é se conectar com o que acreditamos e ter MAIS sintonia com todo o TIMe. É aprender novas formas de oferecer ao mundo um trabalho com MAIS propósito. Aprendizado na TIM é MAIS que possibilidade. É o que...",
       "link": "https://vemprotime.gupy.io/job/eyJqb2JJZCI6MTE0Mjk3OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-02",
+      "data_primeira": "2026-09-02"
+    },
+    {
+      "id": "4afafb65a141",
+      "titulo": "ESTAGIÁRIO DE TÉCNICO DE SEGURANÇA",
+      "empresa": "Gruporomabrasil",
+      "cidade": "Belo Horizonte",
+      "categoria": "Tecnico",
+      "nivel": "Estagio/Trainee",
+      "resumo": "Você é apaixonado por pessoas?Gostaria de trabalhar em uma grande empresa?Então venha com a gente construir experiências lindas para os nossos clientes!Cadastre-se em nossa oportunidade de Estagiário de Técnico de Segurança.Gostaríamos...",
+      "link": "https://gruporomabrasil.gupy.io/job/eyJqb2JJZCI6MTEzNDQzOTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-02",
       "data_primeira": "2026-09-02"
