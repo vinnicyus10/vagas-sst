@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "08/09/2026 18:28",
-  "total": 123,
+  "atualizado_em": "08/09/2026 21:33",
+  "total": 124,
   "vagas": [
     {
       "id": "b5d8fa6cfe45",
@@ -11,6 +11,19 @@
       "nivel": "Nao informado",
       "resumo": "O Grupo 3corações é construído por pessoas, antes de tudo, apaixonadas pelo que fazem. Temos orgulho de crescer pela força do trabalho e seguir, cada vez mais longe, sem esquecer a nossa essência e os nossos valores. É pelo nosso jeito...",
       "link": "https://3coracoes.gupy.io/job/eyJqb2JJZCI6MTE3MDcyMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-08",
+      "data_primeira": "2026-09-08"
+    },
+    {
+      "id": "39f64d9555f5",
+      "titulo": "Técnico de Segurança do Trabalho - Nova Lima/MG",
+      "empresa": "BTS",
+      "cidade": "Nova Lima",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "A BTS é uma empresa especializada em desenvolvimento de projetos imobiliários, com foco em atender as demandas de nossos clientes em todos os detalhes. Encontramos o terreno ideal, desenvolvemos o projeto e executamos a construção do...",
+      "link": "https://bts.gupy.io/job/eyJqb2JJZCI6MTI0Mzg4NTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-08",
       "data_primeira": "2026-09-08"
