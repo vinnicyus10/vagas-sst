@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "11/09/2026 18:20",
-  "total": 123,
+  "atualizado_em": "11/09/2026 21:32",
+  "total": 124,
   "vagas": [
+    {
+      "id": "c7e7bd48791b",
+      "titulo": "Assistente de Técnico de Segurança",
+      "empresa": "Imediatonexway",
+      "cidade": "Alfenas",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Desde 1977, nossa jornada tem sido impulsionada por um forte propósito em Servir com Paixão, conectando caminhos, pessoas e sonhos. E agora queremos compartilhar essa energia com você!Estamos em busca de novos talentos para somar o nosso...",
+      "link": "https://imediatonexway.gupy.io/job/eyJqb2JJZCI6MTI0MTcwOTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-11",
+      "data_primeira": "2026-09-11"
+    },
     {
       "id": "ea6f07916423",
       "titulo": "TECNICO SEGURANÇA DO TRABALHO I BELO HORIZONTE",
