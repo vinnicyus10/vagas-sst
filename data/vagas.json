@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "14/09/2026 19:47",
-  "total": 118,
+  "atualizado_em": "14/09/2026 22:15",
+  "total": 119,
   "vagas": [
     {
       "id": "08439e6bb987",
@@ -11,6 +11,19 @@
       "nivel": "Nao informado",
       "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
       "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTI0NzY2MDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-14",
+      "data_primeira": "2026-09-14"
+    },
+    {
+      "id": "1bafaa521ca1",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO",
+      "empresa": "Imodernizar",
+      "cidade": "Betim",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Atuar na prevenção de acidentes e doenças ocupacionais, promovendo um ambiente de trabalho seguro e em conformidade com as normas de Segurança e Saúde no Trabalho. Responsabilidades e atribuiçõesRealizar inspeções de segurança nos setores,...",
+      "link": "https://imodernizar.gupy.io/job/eyJqb2JJZCI6MTI0ODQ1NTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-14",
       "data_primeira": "2026-09-14"
