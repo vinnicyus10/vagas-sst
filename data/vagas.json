@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "15/09/2026 15:44",
-  "total": 121,
+  "atualizado_em": "15/09/2026 18:50",
+  "total": 122,
   "vagas": [
     {
       "id": "5638090a273e",
@@ -37,6 +37,19 @@
       "nivel": "Nao informado",
       "resumo": "Uma empresa mineira de engenharia e soluções integradas, presente nos mercados nacional e internacional, com uma trajetória marcada pela competência de seus talentos humanos e pelo forte investimento em tecnologias de ponta, permitindo...",
       "link": "https://tsaengenharia.gupy.io/job/eyJqb2JJZCI6MTI0NTcyMjksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-15",
+      "data_primeira": "2026-09-15"
+    },
+    {
+      "id": "e3a66d412689",
+      "titulo": "Técnico em Segurança do Trabalho II",
+      "empresa": "Aegea",
+      "cidade": "Governador Valadares",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "A AegeaCriada em 2010, a Aegea é líder no setor privado de saneamento básico no Brasil. Em cada município onde atua, leva mais saúde e qualidade de vida para a população, respeitando sempre o meio ambiente e a cultura local.Programa...",
+      "link": "https://aegea.gupy.io/job/eyJqb2JJZCI6MTI0OTM4ODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-15",
       "data_primeira": "2026-09-15"
