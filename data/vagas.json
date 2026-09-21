@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "21/09/2026 17:14",
+  "atualizado_em": "21/09/2026 19:56",
   "total": 125,
   "vagas": [
     {
@@ -744,19 +744,6 @@
       "data_primeira": "2026-08-18"
     },
     {
-      "id": "43206070cc84",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
-      "empresa": "Prumo Engenharia",
-      "cidade": "Nova Era",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
-      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIxNTA1NTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-18",
-      "data_primeira": "2026-08-18"
-    },
-    {
       "id": "c8be6f995228",
       "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
       "empresa": "Prumo Engenharia",
@@ -765,6 +752,19 @@
       "nivel": "Nao informado",
       "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
       "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIxNjYxMjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-21",
+      "data_primeira": "2026-08-18"
+    },
+    {
+      "id": "43206070cc84",
+      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
+      "empresa": "Prumo Engenharia",
+      "cidade": "Nova Era",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
+      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIxNTA1NTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-18",
       "data_primeira": "2026-08-18"
