@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "24/09/2026 15:57",
-  "total": 122,
+  "atualizado_em": "24/09/2026 18:58",
+  "total": 124,
   "vagas": [
     {
       "id": "75c11ddbd566",
@@ -24,6 +24,32 @@
       "nivel": "Nao informado",
       "resumo": "A ENGIE Brasil Energia acredita que energia limpa transforma vidas. Cada usina fotovoltaica que operamos representa um passo concreto rumo a um futuro mais sustentável. Para que esse futuro seja construído com segurança, precisamos de...",
       "link": "https://engiebrasilenergia.gupy.io/job/eyJqb2JJZCI6MTI1NzkxMzAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-24",
+      "data_primeira": "2026-09-24"
+    },
+    {
+      "id": "58592004a751",
+      "titulo": "Técnica Segurança do Trabalho III",
+      "empresa": "Vempranexa",
+      "cidade": "Vazante",
+      "categoria": "Tecnico",
+      "nivel": "Nao informado",
+      "resumo": "De acordo com o nosso compromisso com a diversidade e a inclusão, estamos encorajados a receber candidaturas de mulheres para esta posição. Por isso, encorajamos todas as pessoas qualificadas a se candidatarem, independentemente de gênero,...",
+      "link": "https://vempranexa.gupy.io/job/eyJqb2JJZCI6MTI1ODc4NzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-24",
+      "data_primeira": "2026-09-24"
+    },
+    {
+      "id": "7c6411b120c1",
+      "titulo": "Técnico de Segurança do Trabalho Pleno (Prazo Determinado)",
+      "empresa": "YOKI",
+      "cidade": "Pouso Alegre",
+      "categoria": "Tecnico",
+      "nivel": "Pleno",
+      "resumo": "Sobre nós: O sabor de fazer parte de grandes histórias Trabalhar com as marcas Yoki e Kitano é ajudar a construir momentos inesquecíveis na vida de milhões de brasileiros. Da pipoca no cinema em casa e a festa junina com a Yoki, ao tempero...",
+      "link": "https://yoki.gupy.io/job/eyJqb2JJZCI6MTI1ODY0OTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-24",
       "data_primeira": "2026-09-24"
