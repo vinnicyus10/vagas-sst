@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "28/09/2026 18:47",
-  "total": 123,
+  "atualizado_em": "28/09/2026 21:10",
+  "total": 124,
   "vagas": [
     {
       "id": "22a5ced20dda",
@@ -11,6 +11,19 @@
       "nivel": "Nao informado",
       "resumo": "A Vulcabras é a maior gestora de marcas esportivas do Brasil. Estamos dos pés à cabeça dos atletas e de muitos esportistas, com as nossas marcas Olympikus, Mizuno e Under Armour. Somos mais de 17 mil pessoas engajadas em entregar produtos...",
       "link": "https://vulcabras.gupy.io/job/eyJqb2JJZCI6MTI2MTgyODcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-28",
+      "data_primeira": "2026-09-28"
+    },
+    {
+      "id": "71fe0ab44d43",
+      "titulo": "ANALISTA DE SEGURANÇA DO TRABALHO",
+      "empresa": "Captamed",
+      "cidade": "Belo Horizonte",
+      "categoria": "Analista",
+      "nivel": "Nao informado",
+      "resumo": "Como Analista de Segurança do Trabalho, você será responsável por acompanhar e executar atividades relacionadas à legislação de Segurança do Trabalho, contribuindo para a prevenção de acidentes, o cumprimento das normas e o acompanhamento...",
+      "link": "https://captamed.gupy.io/job/eyJqb2JJZCI6MTI2MTk0MzEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-28",
       "data_primeira": "2026-09-28"
