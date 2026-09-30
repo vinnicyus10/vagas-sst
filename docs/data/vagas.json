@@ -1,7 +1,20 @@
 {
-  "atualizado_em": "30/09/2026 17:02",
-  "total": 124,
+  "atualizado_em": "30/09/2026 19:54",
+  "total": 125,
   "vagas": [
+    {
+      "id": "24437a14d374",
+      "titulo": "Técnico Segurança do Trabalho Jr",
+      "empresa": "Genteraizen",
+      "cidade": "Betim",
+      "categoria": "Tecnico",
+      "nivel": "Junior",
+      "resumo": "Somos uma empresa brasileira presente no seu dia a dia. Dos postos e produtos Shell, sempre no seu caminho, até a produção de açúcar, etanol e energia renovável.Aqui, segurança, integridade, colaboração e simplificação são a forma como a...",
+      "link": "https://genteraizen.gupy.io/job/eyJqb2JJZCI6MTI0NTcxNDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
+      "fonte": "Gupy",
+      "data_coleta": "2026-09-30",
+      "data_primeira": "2026-09-30"
+    },
     {
       "id": "0580266ed092",
       "titulo": "TECNICO SEGURANCA TRABALHO II",
