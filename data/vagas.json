@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "01/10/2026 22:59",
-  "total": 120,
+  "atualizado_em": "02/10/2026 16:51",
+  "total": 118,
   "vagas": [
     {
       "id": "24437a14d374",
@@ -757,19 +757,6 @@
       "data_primeira": "2026-08-25"
     },
     {
-      "id": "fc9786667779",
-      "titulo": "Técnico em Segurança do Trabalho",
-      "empresa": "Pimentadeavila",
-      "cidade": "Nova Lima",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Venha fazer parte da Pimenta de Ávila!Há 36 anos, a Pimenta de Ávila vem engenhando soluções para o desenvolvimento sustentável, atuando em Geotecnia, Recursos Hídricos e Meio Ambiente para mineração, indústria, geração de energia e...",
-      "link": "https://pimentadeavila.gupy.io/job/eyJqb2JJZCI6MTIyNjgyMTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-01",
-      "data_primeira": "2026-08-25"
-    },
-    {
       "id": "da6aa44eab71",
       "titulo": "Estágio - Técnico em Segurança do Trabalho",
       "empresa": "Pradolux",
@@ -819,19 +806,6 @@
       "link": "https://selpe.gupy.io/job/eyJqb2JJZCI6MTIxNDgzNTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-02",
-      "data_primeira": "2026-08-19"
-    },
-    {
-      "id": "2ed1828d3391",
-      "titulo": "Estágio Técnico em Segurança do Trabalho",
-      "empresa": "TUPY",
-      "cidade": "Betim",
-      "categoria": "Tecnico",
-      "nivel": "Estagio/Trainee",
-      "resumo": "A Tupy é uma multinacional brasileira com mais de 80 anos de história, presente em mais de 40 países e reconhecida pela tecnologia de ponta aplicada à produção de componentes estruturais em ferro fundido para setores como transporte,...",
-      "link": "https://tupy.gupy.io/job/eyJqb2JJZCI6MTIxNzg4NTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-01",
       "data_primeira": "2026-08-19"
     },
     {
