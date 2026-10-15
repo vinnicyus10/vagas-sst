@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "14/10/2026 22:02",
-  "total": 103,
+  "atualizado_em": "15/10/2026 15:48",
+  "total": 100,
   "vagas": [
     {
       "id": "24437a14d374",
@@ -783,19 +783,6 @@
       "data_primeira": "2026-08-13"
     },
     {
-      "id": "ecbc6aa60c00",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
-      "empresa": "Prumo Engenharia",
-      "cidade": "Barroso",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
-      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTIwNzM4MzEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-14",
-      "data_primeira": "2026-08-13"
-    },
-    {
       "id": "ea2f1cd25985",
       "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
       "empresa": "Prumo Engenharia",
@@ -1028,32 +1015,6 @@
       "fonte": "Gupy",
       "data_coleta": "2026-09-23",
       "data_primeira": "2026-07-14"
-    },
-    {
-      "id": "a02124eeea05",
-      "titulo": "Estágio em Segurança do Trabalho",
-      "empresa": "Belgo",
-      "cidade": "Contagem",
-      "categoria": "Outros",
-      "nivel": "Estagio/Trainee",
-      "resumo": "Proporcionamos um espaço de aprendizagem. Aqui, você terá a oportunidade de desenvolver projetos em sua área de atuação com impactos tangíveis em nossa empresa. Investimos em seu aprendizado, por meio de uma trilha de desenvolvimento que...",
-      "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE2MTA0NDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-14",
-      "data_primeira": "2026-07-09"
-    },
-    {
-      "id": "a99f70eee2de",
-      "titulo": "Técnico(a) de Segurança",
-      "empresa": "Belgo",
-      "cidade": "Itaúna",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Aqui, são as pessoas que estão no centro da nossa estratégia. Com profissionais talentosos, responsáveis e comprometidos criamos produtos e soluções que impactam cada canto do país, geram resultados e proporcionam uma vida melhor.​Venha...",
-      "link": "https://belgo.gupy.io/job/eyJqb2JJZCI6MTE1NzQzMzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-14",
-      "data_primeira": "2026-07-02"
     },
     {
       "id": "c1192206a0af",
