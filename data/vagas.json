@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "27/10/2026 22:50",
-  "total": 86,
+  "atualizado_em": "28/10/2026 17:27",
+  "total": 84,
   "vagas": [
     {
       "id": "24437a14d374",
@@ -534,32 +534,6 @@
       "fonte": "Gupy",
       "data_coleta": "2026-09-30",
       "data_primeira": "2026-08-28"
-    },
-    {
-      "id": "9b2c691f2db1",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
-      "empresa": "Mroativa",
-      "cidade": "Itabira",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Realizar as atividades ligadas a segurança do trabalho, visando assegurar condições que eliminem ou reduzam os riscos de ocorrência de acidentes de trabalho, observando o cumprimento da legislação.Responsabilidades e atribuiçõesAplicar...",
-      "link": "https://mroativa.gupy.io/job/eyJqb2JJZCI6MTIzMTY0NTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-27",
-      "data_primeira": "2026-08-27"
-    },
-    {
-      "id": "854c9010d0b7",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO II",
-      "empresa": "Mroativa",
-      "cidade": "Itabirito",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Realizar as atividades ligadas a segurança do trabalho, visando assegurar condições que eliminem ou reduzam os riscos de ocorrência de acidentes de trabalho, observando o cumprimento da legislação.Responsabilidades e atribuiçõesAplicar...",
-      "link": "https://mroativa.gupy.io/job/eyJqb2JJZCI6MTIzMTYxNjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-27",
-      "data_primeira": "2026-08-27"
     },
     {
       "id": "b04b187a9708",
