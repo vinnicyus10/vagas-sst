@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "29/10/2026 23:05",
-  "total": 81,
+  "atualizado_em": "30/10/2026 17:16",
+  "total": 77,
   "vagas": [
     {
       "id": "24437a14d374",
@@ -91,19 +91,6 @@
       "link": "https://yoki.gupy.io/job/eyJqb2JJZCI6MTI1ODY0OTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
       "fonte": "Gupy",
       "data_coleta": "2026-09-30",
-      "data_primeira": "2026-09-24"
-    },
-    {
-      "id": "58592004a751",
-      "titulo": "Técnica Segurança do Trabalho III",
-      "empresa": "Vempranexa",
-      "cidade": "Vazante",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "De acordo com o nosso compromisso com a diversidade e a inclusão, estamos encorajados a receber candidaturas de mulheres para esta posição. Por isso, encorajamos todas as pessoas qualificadas a se candidatarem, independentemente de gênero,...",
-      "link": "https://vempranexa.gupy.io/job/eyJqb2JJZCI6MTI1ODc4NzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-29",
       "data_primeira": "2026-09-24"
     },
     {
@@ -471,19 +458,6 @@
       "data_primeira": "2026-08-31"
     },
     {
-      "id": "2ee5a7464623",
-      "titulo": "Técnico(a) de Segurança do Trabalho II - Betim/MG",
-      "empresa": "Ecogenbrasil",
-      "cidade": "Betim",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Assegurar a aplicação da política de segurança do trabalho corporativa dentro das instalações da Ecogen, inspecionado as instalações de acordo com os requisitos de segurança, sáude e meio ambiente, avaliando os riscos das atividades,...",
-      "link": "https://ecogenbrasil.gupy.io/job/eyJqb2JJZCI6MTIxNDE0NDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-29",
-      "data_primeira": "2026-08-31"
-    },
-    {
       "id": "9b5444e0e0f9",
       "titulo": "Técnico(a) de Segurança do Trabalho",
       "empresa": "Tsaengenharia",
@@ -692,19 +666,6 @@
       "data_primeira": "2026-08-11"
     },
     {
-      "id": "9fa59e9474df",
-      "titulo": "Técnico Segurança do Trabalho (Araxá)",
-      "empresa": "Vinci Energies",
-      "cidade": "Araxá",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Acelerando a Transição Energética e a Transformação Digital A expertise da Actemium abrange todo o ciclo de vida industrial, desde o projeto e engenharia até a execução e manutenção. Nossa experiência e trabalho em rede nos permitem...",
-      "link": "https://vinci-energies.gupy.io/job/eyJqb2JJZCI6MTIwNDI3NTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-29",
-      "data_primeira": "2026-08-11"
-    },
-    {
       "id": "0849aa02c366",
       "titulo": "Assistente Pleno Sesmt - Belo Horizonte (MG)",
       "empresa": "Grupoelo",
@@ -755,19 +716,6 @@
       "fonte": "Gupy",
       "data_coleta": "2026-09-30",
       "data_primeira": "2026-08-04"
-    },
-    {
-      "id": "4314e6a67a4a",
-      "titulo": "TÉCNICO DE SEGURANÇA DO TRABALHO I",
-      "empresa": "Prumo Engenharia",
-      "cidade": "Nova Era",
-      "categoria": "Tecnico",
-      "nivel": "Nao informado",
-      "resumo": "Buscamos um profissional comprometido, organizado e proativo, com atenção aos detalhes e capacidade para atuar em diversas frentes simultaneamente. Esperamos que o Técnico em Segurança do Trabalho colabore de forma integrada com as...",
-      "link": "https://prumoengenharia.gupy.io/job/eyJqb2JJZCI6MTE4OTM0NjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=?jobBoardSource=gupy_portal",
-      "fonte": "Gupy",
-      "data_coleta": "2026-09-29",
-      "data_primeira": "2026-07-31"
     },
     {
       "id": "59a53b558f16",
